@@ -1,0 +1,98 @@
+aggregation function :-- will convert the multiple sell information into single cell
+
+sum()     :-- will add the all values
+min()     :-- will return lowest value
+max()     :-- will return highest value
+count()   :-- will return no.of rows which contain data
+avg()     :-- will calculate the sum of values/count of 		values
+
+
+>>>select agg(column_name) from table_name;
+
+
+KEYS :-- will establish the connection between two 	table
+
+primary key  :-- will mention the which column is 		available to establish the connection
+		>>>unique + not null 
+foreign key  :-- will build the connection which 		represented by primary key
+
+>>>create table table1(
+column_name1 datatype primary key,
+column_name2 datatype,
+column_name3 datatype 
+
+);
+
+create table table2(
+column_name1 datatype,
+column_name4 datatype,
+column_name5 datatype
+foreign key (column_name1) references table1(column_name1)
+);
+
+
+======================================================================================================
+
+use d19r;
+
+create table pavan(
+sno int,
+name varchar(100),
+age int,
+phone bigint
+);
+
+insert into pavan values(1,'srikar',35,1234567890),
+(2,'raju',40,0987654321),
+(3,'lakshmi',21,1234567890),
+(4,'sasi',null,1234567890),
+(5,'priya',23,0987654321),
+(6,'abhishek',null,0987654321);
+
+
+select * from pavan;
+
+select sum(age) from pavan;
+
+
+select max(age) from pavan;
+
+select min(age) from pavan;
+
+
+select sum(name) from pavan;
+
+select * from pavan;
+
+select count(age) from pavan;
+
+insert into pavan(sno) values(7);
+
+insert into pavan(name) values('navya'),('sowmya');
+
+
+select count(*) from pavan;
+
+select count(2.4) from pavan;
+
+select * from pavan;
+
+select sno>=5 from pavan;
+
+select count(null);
+
+select sum(age)/count(age) from pavan;
+
+select * from pavan;
+
+select avg(age) from pavan;
+
+
+select * from orders;
+
+
+
+
+
+
+

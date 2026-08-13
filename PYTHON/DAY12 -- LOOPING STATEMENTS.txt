@@ -1,0 +1,12 @@
+looping statements :
+
+for       :-- when we know the particular 		no.of iterations 
+>>>for iterator in sequence:
+	#block of code
+
+while    :-- will use when we don't know 		no.of iterations
+
+>>>while condition:
+	#block of code
+
+

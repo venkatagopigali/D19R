@@ -1,0 +1,30 @@
+functions :-- a block of code which reusable
+
+advantages :--
+-----------------------
+>>>reduce space complexity
+>>>reduce time complexity
+
+
+types of functions :
+---------------------------
+predefined      :-- which developed python developers
+		>>>it is not possible to modify the code
+		ex:-- len(),print(),id(),type(),append() etc--
+user defined    :-- which function is created by users based on 			requirements
+		>>>we can modify the block code 
+
+creation of function:
+-----------------------------
+def function_name():
+	#block of code 
+
+calling function:
+----------------------
+>>>function()
+
+
+
+
+
+

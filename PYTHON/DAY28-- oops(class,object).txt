@@ -1,0 +1,24 @@
+oops :-- object oriented programing language 
+
+>>>modularity          :-- will represent the code in the form 					class and object
+>>>code reusability 
+>>>will increase the readability
+>>>will provide security 
+
+class      :-- it is blue print of object or plan or architecture
+
+creation of class:
+-----------------------------------
+>>>class class_name:
+	#block of code
+
+
+
+object    :-- the real world entities which will decorate the class
+		or >>>instance of a class
+
+creation of object :
+------------------------
+>>>obj=class_name()
+
+ 

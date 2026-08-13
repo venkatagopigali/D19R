@@ -1,0 +1,17 @@
+sql :--structured query language
+>>>language :-- mediator to communicate with other
+>>>query :-- set of instruction
+
+ddl   :-- data definition language :-- will perform operation 		on database and table architecture 
+		>>>create,alter,rename,drop,truncate
+dml   :-- data manipulation language :-- will perform 			operation on table data
+		>>>insert,update,delete
+dcl   :-- data control language  :-- will give the permission 		and remove the permission from user
+		>>>grant,revoke
+tcl  :-- transaction control language :-- 
+transaction :-- the operation which will perform on table data
+		i.e dml commands
+		>>>commit,rollback,savepoint
+
+dql  :-- data query language :-- will display the table 
+		>>>select,from

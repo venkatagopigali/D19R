@@ -1,0 +1,37 @@
+primitive datatype :-- we can send only one at a time into a variable 
+
+int        :-- will store the numerical type of data with out 			decimal point
+float      :-- will store the numerical type of data with 			decimal point
+string     :-- collection charters with in quotes
+
+		>>>character :-- a single letter it could be 			anything ex :-- alphabets,number,special symbol
+
+boolean    :-- we have values either True or False
+complex    :-- we have two part real part and imaginary part
+
+>>>realpart+imagenary
+>>>10+2j
+
+None       :-- will represent the empty data 
+
+
+
+operators :-- will perform an operation between operand or 			values or operand to values
+
+operand :-- nothing but variable or name
+
+>>>a+b+10
+
+operands :-- a,b
+operator :-- +
+values   :-- 10
+
+
+
+
+
+
+
+
+
+

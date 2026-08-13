@@ -1,0 +1,95 @@
+ddl :-- data definition language : will work with database and table architecture
+
+>>>to establish connection between workbench and server
+-----------------------------------------
+>>>win+r
+>>>services.msc
+
+
+
+create     :-- we will create database or table 
+
+database creation :
+----------------------------
+>>>create database database_name;
+
+display the databases:
+-------------------------------
+>>>show databases;
+
+selecting a database:
+-------------------------------
+>>>use database_name;
+
+display the tables:
+-----------------------------
+>>>show tables;
+
+creation of table:
+-----------------------------
+>>>create table table_name(
+column_name datatype,
+column_name2 datatype,
+column_name3 datatype
+
+);
+
+display table properties :
+-----------------------------------
+>>>describe table_name;
+>>>desc table_name;
+
+
+
+
+
+
+
+alter 
+rename
+drop
+truncate
+
+================================================================================================
+
+
+create database d19r;
+
+show databases;
+
+use d19r;
+
+show tables;
+
+create table student(
+id int,
+name text,
+age int,
+batch text,
+marks int,
+doj date
+);
+
+show tables;
+
+select * from student;
+
+
+create table ecommerce(
+orderid int,
+price int,
+productname text,
+qunantity int,
+tax float
+);
+
+show tables;
+
+select * from ecommerce;
+
+
+select * from student;
+
+describe student;
+
+desc student;

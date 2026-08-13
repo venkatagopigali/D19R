@@ -1,0 +1,84 @@
+dml :-- data manipulation language :-- will perform operations on table data
+
+insert   :-- will add a new record or data to table 		data
+single record:
+------------------------------
+>>>insert into table_name values(v1,v2,v3--);
+
+multiple records:
+-------------------------------------------
+>>>insert into table_name values(v1,v2,v3--),(v1,v2,v3---)----;
+
+selected columns:
+-------------------------------------------
+>>>insert into table_name(col_name1,column_name2) values(v1,v2);
+
+
+before perform update or delete we need disable security option:
+-----------------------------------------------------------------
+>>>set sql_safe_updates=0;
+
+
+update   :-- will modify the existing data
+
+
+>>>update table_name set column_name='new_data' where condition;
+
+>>>update table_name set col_name=new_data,col_name2=new_data-- where condition;
+
+
+delete
+
+
+
+==================================================================
+
+use d19r;
+
+show tables;
+
+select * from student;
+
+desc student;
+
+insert into student values(1,'vijay',45,'d19r',99,'2001-01-01');
+
+insert into student values(2,'sethupathi',50,'d19r',105,'2026-01-01');
+
+
+insert into student values(3,'bebamma',18,'bipc',90,'2022-01-01'),
+(4,'aasi',25,'mpc',80,'2022-09-09'),
+(5,'kathyayini',21,'Bipc',56,'2025-01-01');
+
+select * from student;
+
+insert into student(id,name,doj) values(6,'orey akhil','2025-01-01');
+
+set sql_safe_updates=0;
+
+update student set marks=0 where marks=105;
+
+
+update student set name='akhil' where id=6;
+
+select * from student;
+
+update student set marks=100 where id>3;
+
+update student set batch='ds' where batch='d19r';
+
+update student set name='gopi',age=18,marks=35,doj='2025-01-01' where id=4;
+
+select * from student;
+
+update student set age=30;
+
+update student set marks=
+(
+case
+when id=1 then 70
+when id=2 then 80
+when id=3 then 90
+else marks
+end
+);

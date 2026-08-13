@@ -1,0 +1,82 @@
+joins :-- will extract the data from two or more tables
+
+inner join  :-- will return common values from both 		tables
+
+>>>select * from table1 inner join table2 on table1.col_name=table2.col_name;
+
+
+left        :--  will return all values from left table and common values from 		right table
+
+>>>select * from table1 left join table2 on table1.col_name=table2.col_name;
+
+
+right       :-- will return all values from right table and common values from 		left table
+
+>>>select * from table1 right join table2 on table1.col_name=table2.col_name;
+
+
+outer
+cross
+self 
+natural 
+===============================================================================================
+
+use d19r;
+
+create table a1(
+sno int primary key,
+name varchar(100),
+age int
+);
+create table a2(
+sno int,
+marks int,
+grade char(1),
+foreign key (sno) references a1(sno)
+);
+
+
+select * from a1;
+
+select * from a2;
+
+-- drop table a1;
+
+insert into a1 values(1,'gopi',15);
+
+insert into a2 values(1,40,'O');
+
+insert into a1 values(2,'vijay',25),
+(3,'jashwanth',30),
+(4,'poojitha',20),
+(5,'pavan',21);
+
+insert into a2 values(3,60,'C'),(4,35,'F'),(4,'99','A');
+
+select * from a1;
+
+select * from a2;
+
+select * from a1 where name='gopi';
+
+select * from a2 where sno=1;
+
+
+
+select * from a1 inner join a2 on a1.sno=a2.sno where a2.marks>40 order by a2.marks desc;
+
+
+
+select * from d19r.a1;
+
+select * from 10k.emp;
+
+select * from d19r.a1 inner join 10k.emp on d19r.a1.sno=10k.emp.id where 10k.emp.name='pranav';
+
+select * from a1 left join a2 on a1.sno=a2.sno;
+
+select * from a2 left join a1 on a2.sno=a1.sno;
+
+select * from a1 right join a2 on a1.sno=a2.sno;
+
+select * from a2 right join a1 on a1.sno=a2.sno;

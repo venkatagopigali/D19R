@@ -1,0 +1,40 @@
+method :-- the block of code which reusable inside the class
+
+
+creation of method:
+-----------------------
+class class_name:
+	def method_name(self):
+		#block code 
+
+calling the method:
+---------------------
+>>>obj_name.method_name()
+
+
+
+types of methods :
+------------------------------
+instance method
+class method
+static method
+
+instance methods :-- we can use the method in another classes
+----------------------------------------------------------
+
+class class_name:
+	def method_name(self):   # instance method
+		#block code 
+
+class method :-- we can change the class variable
+--------------------------------------------------------
+class class_name:
+	@classmethod
+	def method_name(cls):
+		#block of code
+   
+
+
+
+
+

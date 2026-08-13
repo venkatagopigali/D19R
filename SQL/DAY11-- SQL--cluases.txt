@@ -1,0 +1,47 @@
+Clauses :
+
+where 
+order by
+limit       :-- will select the no.of rows from top of table
+
+>>>select * from table_name limit no.of rows;
+
+
+distinct    :-- will return all value from column but only once which are 		duplicated or will return unique values
+
+>>>select distinct column_name  from table_name;
+
+
+group by     :-- will group the data without any condition
+
+>>>select column_name from table_name group by column_name;
+
+
+having       :-- will perform condition on grouping data
+
+>>>select cloumn_name from table_name group by column_name having condition;
+
+
+
+offset    :-- will skip the no.of rows 
+
+>>>select * from table_name limit no.of_row_select offset no.of_row_skip;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

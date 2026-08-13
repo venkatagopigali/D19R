@@ -1,0 +1,41 @@
+operators :--
+
+arithmetic operator
+assignment
+comparison
+logical           :-- will check the condition is true 			or false
+and      :-- will must be true all conditions
+		>>>and
+or       :-- here at least one condition must be true
+		>>>or
+not      :-- true-->false , false-->true
+
+
+identify :-- will compare the memory location of data
+
+is       :-- will return true when both memory location 		are same
+is not   :-- will return true when both memory location 		are not same
+
+
+membership :-- will check the values are present or not 		in a group of values
+
+in         :-- will return true when the values is 		present 
+not in     :-- will return true when the values is not 		present 
+
+bitwise    :-- will perform mathematical operations as 		computer calculation
+
+bitwise and
+bitwise or
+bitwise not
+bitwise XOR
+left shift
+right shift
+
+
+
+
+
+
+
+
+ternary

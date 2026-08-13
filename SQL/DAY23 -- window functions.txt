@@ -1,0 +1,16 @@
+window functions:
+
+partition by :-- will separate the groups
+
+row_number()
+rank()
+dense_rank()
+
+lead()       :-- will move the entire column to upperwards
+
+>>>select *,lead(column_name,no.of pos) over() from table_name,
+
+lag()        :-- will move the entire column to downwards
+
+>>>select *,lag(colun_name,no.of pos) over() from table_name;
+

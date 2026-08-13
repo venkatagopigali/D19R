@@ -1,0 +1,34 @@
+nested list :-- a list with in the another
+copy :-- will copy the data from one list another to list
+
+>>>we will work with nested list
+
+shallow    :-- will change the data in original list and 		copied list 
+deep       :-- will change the copied list do change the 		original list
+
+tuple :-- collection of elements 
+>>>ordered   :-- will the return output as it is input 			which is given user
+>>>heterogeneous collection  :-- will accepts the 				different type of datatypes
+>>>immutable   :-- we cannot change the data
+>>>will allow the duplicates
+
+declaration of tuple :
+----------------------------
+()
+tuple()
+
+>>>we can access the elements with index and slicing
+
+tuple methods :
+----------------------------
+count()   :-- will count the number how many time it is 		repeated
+index()   :-- will return the position element 
+
+
+
+
+
+
+
+
+

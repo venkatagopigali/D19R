@@ -1,0 +1,111 @@
+stored procedure :
+
+with parameters :
+
+in      :-- will send the value from parameter into command
+out     :-- will try to display output
+inout   :-- will send the value into command and get the result by 		using same variable
+
+
+remove procedure:
+------------------------
+>>>drop procedure procedure_name;
+
+========================================================================================================
+use d19r;
+
+select * from emp;
+
+
+
+delimiter $$
+create procedure salary(a int)
+begin
+select * from emp where salary>a;
+end$$
+delimiter ;
+
+call salary(75000);
+
+delimiter $$
+create procedure ins(in e int,in n varchar(100),in d varchar(100),s int,a int ,in c varchar(100))
+begin
+insert into emp values(e,n,d,s,a,c);
+end$$
+delimiter ;
+
+call ins(34,'Gali Gopi','Ayushmanbhava',50,18,'Hyd');
+
+call kalyan();
+
+use information_schema;
+
+show tables;
+
+select * from ROUTINES where ROUTINE_SCHEMA='d19r';
+
+use d19r;
+
+call kowshik();
+
+delimiter $$
+create procedure a()
+begin
+select * from emp where age>33;
+end$$
+delimiter ;
+
+call a();
+
+
+delimiter $$
+create procedure a1(out a int)
+begin
+select * from emp where age>33;
+end$$
+delimiter ;
+
+call a1(@a);
+
+call dept('Hr');
+
+delimiter $$
+create procedure dept1(out a decimal(10,2),in b varchar(100))
+begin
+select * from emp where department=b;
+end$$
+delimiter ;
+
+call dept1(@a,'Hr');
+
+call dept('Hr');
+
+delimiter $$
+create procedure dept2(inout a varchar(100))
+begin
+select * from emp where department=a;
+end$$
+delimiter ;
+
+set @a='Hr';
+
+call dept2(@a);
+
+drop procedure dept1;
+
+delimiter $$
+create procedure cad(i int,c varchar(100),a int,d varchar(100))
+begin
+select * from emp where city=c;
+select * from emp where department=d;
+select * from emp where age>a;
+insert into emp(empid,city,department,age) values(i,c,d,a);
+select * from emp;
+end$$
+delimiter ;
+
+call cad(36,'Hyderabad',25,'Sales');
+
+call kowshik();
+
+drop procedure cad;

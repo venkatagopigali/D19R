@@ -1,0 +1,32 @@
+sub queries :--
+
+single row
+multi row
+multi column
+nested
+correlated    :-- here the inner query will take help 		of outer query to form the condition
+
+=================================================
+
+use d19r;
+
+select * from emp;
+
+select * from emp where salary>
+(select avg(salary) from emp);
+
+select * from emp as e where salary>
+(select avg(salary) from emp where department=e.department);
+
+select department,avg(salary) from emp group by department;
+
+select * from emp as e where salary =
+(select max(salary) from emp where department=e.department);
+
+select * from emp;
+
+select * from emp where (city,department)=
+(select city,department from emp where name='divya') and 
+salary<(select salary from emp where name='divya');
+
+select * from emp where department='Hr' and salary>40000; 

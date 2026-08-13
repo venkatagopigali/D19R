@@ -1,0 +1,35 @@
+set :-- collection elements
+>>>will not allow the duplicates
+>>>unordered collection
+>>>mutable 
+>>>heterogeneous collection
+
+declaration set :
+------------------------
+>>>{}
+>>>set()
+
+>>>by using looping statement we can access the elements
+
+set methods :--
+-----------------------------
+add()      :-- will add new element into set
+remove()   :-- will remove the element from set but will 		raise the error when the element not present 		in set
+discard()  :-- will remove the element from set, but will 		not raise any error including element is not 		present
+pop()      :-- remove data from set
+update()   :-- will return common elements from both sets
+clear()    :-- will remove all elements from set
+setoperators :--
+----------------------------
+union             (|) :-- will return all values from both 			sets , will allow only once which duplicated
+intersection      (&) :-- will return common values from 			both sets
+difference        (-) :-- will return all values from first 			set excluding common values
+symmetric_difference(^):-- will return all values from both 			sets which are not common
+
+
+
+
+
+
+
+

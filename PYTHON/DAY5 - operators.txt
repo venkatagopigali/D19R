@@ -1,0 +1,65 @@
+operator :-- will perform an operation between operand s 		or values or operand to values
+
+>>>a+b+c+d-40*10
+operands :-- a,b,c,d
+operators :-- +,-,*
+values :-- 40,10 
+
+
+arithmetic operator  :-- perform mathematical operations
+
++  :-- addition :-- will add the two numbers 
+-  :-- minus    :-- will subtract the numbers
+*  :-- multiplication :-- will multiply the numbers 
+/  :-- division :-- will return quotient value with decimal 				point
+			(remainder<divisor)
+%  :-- modulo division :-- will return remainder
+// :-- floor division :--  will return quotient with decimal 				value
+** :-- exponent(power) :-- will multiply same number with no.of 				times
+
+assignment operator   :-- will assign a value to the variable
+
+=    :-- assign :-- will assign a value into a variable 
++=   :-- add & assign             :-- will add the numbers and 					assign to variable
+-=   :-- subtract & assign        :-- will subtract the numbers and 					assign to variable
+*=   :-- multiply & assign        :-- will multiply the numbers and 					assign to variable
+/=   :-- division & assign       :-- will division the numbers and 					assign to variable
+//=  :-- floor division & assign  :-- will floor division the 					numbers and assign to variable
+%=   :-- modulo division & assign  :--will modulo division the 					numbers and assign to variable
+
+**=  :-- exponent & assign     :-- will power the 					numbers and assign to variable
+
+
+comparison operator    :-- will compare the two values 
+
+==  :-- equals :-- will check two values are same or not 
+>   :-- Greater then :-- will check first is bigger or not then 			compared to second value
+<   :-- less then    :-- will check first is small or not then 				compared to second value
+
+>=  :-- greater then or equals :-- will check the first value is 		bigger are equal compared to second value
+<=  :-- less then or equals :-- will check the first value is 		small are equal compared to second value
+
+!= :-- not equals :-- will check the both values are not same
+
+
+
+
+
+
+
+
+
+identify operator
+membership
+logical
+bitwise
+ternary 
+
+
+
+
+
+
+
+
+

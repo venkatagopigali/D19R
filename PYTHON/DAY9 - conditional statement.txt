@@ -1,0 +1,38 @@
+conditional statement :
+
+if 
+if-else
+if-elif-else  :-- here we have more then one true block 
+		 here false block is optional
+>>>if condition:
+	#true block
+   elif condition:
+	#true block
+   elif condition:
+	#true block
+   else:
+	#false block
+
+
+nested if    :-- if block inside anther if block
+
+>>>if condition:
+	if condition:
+		#true block
+	else:
+		#false block
+   else:
+	#false block
+
+
+match  :-- will mention into multiple conditions it will look like elif ladders
+
+>>>match value:
+	case 1:
+		'result1'
+        case 2:
+		'result2'
+		|
+		|
+	case _:
+		'false block'

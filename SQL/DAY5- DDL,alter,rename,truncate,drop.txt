@@ -1,0 +1,123 @@
+ddl 
+---------------
+create
+alter      :-- will perform operations on table 		architecture
+
+add columns :
+-------------------------------------
+
+>>>at last
+------------
+>>>alter table table_name add column column_name datatype;
+
+>>>at middle
+-------------
+>>>alter table table_name add column column_name datatype after exsting_column;
+
+>>>at first:
+-----------------
+>>>alter table table_name add column column_name datatype first;  
+
+
+rename column
+--------------------------------------------------------------
+>>>alter table table_name rename column old_column to new_column;
+
+drop columns :
+-----------------------------------------------------------
+>>>alter table table_name drop column column_name; 
+
+change the datatype:
+------------------------------------------------------
+>>>alter table table_name modify column column_name new_datatype;
+
+
+
+rename     :-- will change the table name
+--------------------------------------------------
+
+>>>rename table old_table_name to new_table_name;
+
+
+
+
+truncate  :-- will remove entire table data except table architecture
+-------------------------------------------------------------------------
+
+>>>truncate table table_name;
+
+drop      :-- will remove the table data and table architecture
+------------------------------------------------------------------
+>>>drop table table_name;
+
+>>>drop database database_name;
+
+
+============================================================================
+
+use d19r;
+
+show tables;
+
+select * from emp;
+
+alter table emp add column mobile int;
+
+alter table emp add column salary int after role;
+
+
+alter table emp add column last_name varchar(100) after name;
+
+alter table emp add column id int first;
+
+select * from emp;
+
+alter table emp add column age int after last_name;
+
+alter table emp rename column name to first_name;
+
+alter table emp rename column mobile to phone;
+
+alter table emp drop column age;
+
+select * from emp;
+
+alter table emp drop column phone;
+
+desc emp;
+
+alter table emp modify column id bigint;
+
+alter table emp modify column first_name int;
+
+alter table emp modify column pincode int;
+
+show tables;
+
+rename table emp to employee;
+
+select * from emp;
+
+select * from employee;
+
+drop table employee;
+
+truncate table employee;
+
+show tables;
+
+select * from info;
+
+drop table info;
+
+show databases;
+
+drop database college;
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+string functions :-- we can perform any type of data i.e 			string,numbers,date
+
+concat('str1','str2','str3')     :-- will concat the two or more columns
+upper('str')                     :-- will convert into upper case
+lower('str')                     :-- will convert into lower case
+length('str')			 :-- will return no.of characters in a string
+replace('original_str','old','new') :-- will modify the string
+left('original_str',no.of_char)  :-- will split the string by defaultly left side
+right('original_str','no.of_char'):--will split the string by defaultly right side   
+substr('org_str','start_pos',no.of_char) :-- will split the string
+reverese('str')                  :-- will reverse the string
+trim('str')                      :-- will remove the start and end spaces
+
+===============================================================================
+
+use d19r;
+
+select concat('senior',"  ",'junior');
+
+select concat(7,'dhoni',45,'hit man',18,'king',1,'class',33,'kunfu');
+
+select  upper("PreeThi");
+
+select lower("PreeThi");
+
+select length("pawan kalyan");
+
+select RepLaCe("GOPI",'O','a');
+
+select ascii('o');
+
+select replace("Anji",'i','!');
+
+select replace("attitude_abbai",'bb','a');
+
+select left("vijay",3);
+
+select right("rohit",4);
+
+select substr('nikhil',2,4);
+
+select reverse('kowshi');
+
+select length(("       anji      "));

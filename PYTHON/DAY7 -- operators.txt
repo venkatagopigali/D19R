@@ -1,0 +1,20 @@
+operators :
+
+
+arithmetic
+assignment
+relational
+logical 
+identify
+membership
+bitwise      :-- will perform mathematical 			operation as per computer 			calculation
+bitwise and  :--(&)
+bitwise or   :--(|)
+bitwise not  :--(~) --> -(n+1)
+bitwise xor  :--(^)
+left shift   :--(<<) :-- will move the entire 			binary value for left side
+right shift  :--(>>) :-- will move the entire 			binary value for right side
+
+ternary  :-- will reduce the code on conditional statements
+
+>>>true_result condition else false_result;

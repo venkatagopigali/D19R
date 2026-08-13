@@ -1,0 +1,47 @@
+non primitive datatype :-- will store the more then one 			value at a time in single variable
+
+list
+tuple
+set
+dictionary
+
+
+list :-- collection of elements
+
+declaration of list :--
+----------------------
+-->[]
+-->list()
+properties :
+--------------
+>>>it heterogenous elements  :-- 
+	:-- will accepts the different type of datatypes
+>>>it mutable :--
+	:-- will change the data but cannot change memory 		location of variable
+>>>it is ordered collection of elements   :-- 
+	:-- here the result will display as same as input
+
+>>>will allow the duplicates  :--
+	:-- we send the data repedently
+
+
+>>>we can access the elements in list by using index or slicing
+
+index :-- will access the single values at time 
+
+positive  --> start -->0 -->left to right
+negative  --> start --> -1 --> right to left
+
+slicing :-- will access the multiple elements at a time
+
+[start:stop:step]
+
+by default values:
+>>>start -->0
+>>>stop --> end of list
+>>>step --> 1
+
+
+
+
+

@@ -1,0 +1,39 @@
+user defined function :-- which is created by users
+
+>>>def function_name():
+	#block of code
+
+calling function :--
+------------------------
+function_name()
+
+parameter   :-- the values which will declare in the inside 			function declaration or the place holders in 			function declaration
+
+arguments   :-- the values which will pass into the calling 			function
+
+
+types of user defined function :
+---------------------------------------------
+
+without parameters   :-- we donnot pass any parameters into function
+
+>>>def function_name()
+	#block of code
+
+calling function:
+---------------------
+>>>function_name()
+
+
+with parameters      :-- we can pass the some variable as parameters 
+
+>>>def function_name(par1,par2,par3-----):
+	#block of code
+function_name(arg1,arg2,arg3------)
+
+
+
+
+
+
+

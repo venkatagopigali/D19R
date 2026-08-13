@@ -1,0 +1,28 @@
+operators :-- will perform operation between operand and values and operand to values
+
+arithmetic   :-- will perform mathematical calculation
+		(+,-,*,/)
+relation     :-- will compare the two values
+		(=,>,<,>=,<=,!= or <>)
+logical      :-- will check the condition is true or false
+
+>>>and  :-- will must  be true all condition
+>>>or   :-- will true at least one condition
+>>>not  :-- true--> false , false-->true
+
+membership  :-- will check the value is present or not in a 		group of values
+
+in       :-- will return true if value is present
+not in   :-- will return true if values is not present 
+
+
+identify   :-- will compare the memory location of cell
+
+is         :-- will return true if cell is null
+is not     :-- will return true if cell contain any data
+
+
+
+
+
+

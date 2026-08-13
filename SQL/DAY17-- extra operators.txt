@@ -1,0 +1,89 @@
+extra operators :
+
+like 
+between
+as 
+union       :-- will return all values from both table will return 		only once which are common
+>>>select * from table1
+union
+select * from table2;
+
+union all   :-- will return all values from both tables with 			duplicates
+
+>>>select * from table1
+union all
+select * from table2;
+
+
+intersect   :-- will return common values from both tables
+
+>>>select * from table1
+intersect
+select * from table2;
+
+except     :-- will return all values from first but with out which 		are common values with second
+
+>>>select * from table1
+except
+select * from table2;
+
+
+=================================================================
+
+use d19r;
+
+select * from customer;
+
+select * from customer where id between 4 and 8;
+
+create table t1(
+sno int,
+name varchar(100),
+marks int
+);
+
+create table t2(
+sno int,
+name varchar(100),
+marks int
+);
+
+insert into t2 values(7,'akshith',40),
+(8,'bob',45);
+
+select * from t1;
+
+select * from t2;
+
+select * from t1 left join t2 on t1.sno=t2.sno
+union
+select * from t1 right join t2 on t1.sno=t2.sno;
+
+
+select * from t1
+union
+select * from t2;
+
+select * from t1
+union all
+select * from t2;
+
+select * from t1
+intersect
+select * from t2;
+
+select * from t1
+except
+select * from t2;
+
+select * from t2
+except
+select * from t1;
+
+
+
+
+
+
+
+ 

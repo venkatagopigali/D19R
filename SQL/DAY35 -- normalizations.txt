@@ -1,0 +1,10 @@
+normalization :-- used to organize data
+
+>>>reduce redendency
+
+1nf    :-- it accepts single data in single cell
+2nf    :-- will reduce the partially dependency
+3nf
+bcnf
+4nf
+5nf

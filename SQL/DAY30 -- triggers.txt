@@ -1,0 +1,53 @@
+trigger :-- if we are perform an operation in one table then the result will be store in another
+
+
+
+delimiter $$
+create trigger trigger_name
+{before|after} {insert|update|delete} on table1
+for each row
+begin
+-- command
+end$$
+delimiter ;
+
+===================================================================================================
+
+use d19r;
+
+create table bank(
+acc bigint,
+name varchar(100),
+branch varchar(100),
+balance int
+);
+
+create table statement(
+cre_deb varchar(100),
+dot datetime default now()
+);
+
+select * from bank;
+
+insert into bank values(33333,'pooja','Delhi',10);
+
+select * from statement;
+
+delimiter $$
+create trigger ayushmanbhava
+after insert on bank
+for each row
+begin
+insert into statement(cre_deb) values('new_acc created.....');
+end$$
+delimiter ;
+
+select * from bank;
+
+insert into bank values(66666,'varshith','Pune',-100),
+(77777,'Raju','Godavari',0);
+
+select * from statement;
+
+
+

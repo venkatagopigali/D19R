@@ -1,0 +1,19 @@
+date functions :-- will perform operation on only date 			type data
+
+now()         :-- will return the present time and date
+current_date() or curdate()
+	      :-- will return only present date
+current_time() or curtime()
+	      :-- will return only present time
+date_add('yyyy-mm-dd',interval count day/month/year)    
+	      :-- will add the no.of years or no.of months or no.of 		  day to date
+date_sub('yyyy-mm-dd',interval count day/month/year)
+	      :-- will remove the no.of days or no.of months or 		  no.of year from the date
+datediff('yyyy--mm-dd','yyyy-mm-dd')     :-- 
+	      :-- will return no.of days between two dates
+		>>>start date exclude
+		>>>end date include
+extract(year/month/day/hour/minute/second from 'yyyy-mm-dd HH:MM:SS') 
+	      :-- will return year or month or day or minute or second or 			hours from the date   
+dayname('yyyy-mm-dd')     :-- will return the day name
+monthname('yyyy-mm-dd')   :-- will return the month name

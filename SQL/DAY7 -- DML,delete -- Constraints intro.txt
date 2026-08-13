@@ -1,0 +1,106 @@
+dml :
+
+insert
+update
+delete    :-- will remove the records in table data based on 			condition
+
+>>>delete from table_name where condition;
+
+constraints :-- will send the data into table based on condition
+		or will send the data into after validation
+
+unique          :-- will not accepts duplicates and 
+			will accepts the null values
+not null        :-- will not accepts the null values
+			will accepts duplicates
+check
+default
+auto_increment
+
+
+
+>>>create table table_name(
+column_name datatype constraint,
+column_name datatype 
+
+);
+
+
+==========================================================================================
+
+use d19r;
+
+select * from student;
+
+insert into student values(7,'sai ram',44,'Ds',99,'2026-09-08'),
+(8,'mahesh babu',45,'Cimena',100,'2026-07-08');
+
+select * from student;
+
+insert into student(id,age,marks) values(1,23,77);
+
+set sql_safe_updates=0;
+
+update student set batch='python' where id=8;
+
+update student set name='karunakar',age=16 where id=4;
+
+delete from student where id=6;
+
+select * from student;
+
+delete from student where marks>99;
+
+delete from student;
+
+select * from student;
+
+set autocommit=0;
+
+truncate table student;
+
+rollback;
+
+
+create table data_science(
+id int,
+name varchar(100),
+email varchar(100),
+salary int
+);
+
+select * from data_science;
+
+insert into data_science values(1,'bahubali','bahubali@gmail.com',1000);
+
+insert into data_science(id,salary) values(2,7000);
+
+create table customer(
+id int unique,
+name varchar(100)
+);
+
+select * from customer;
+
+desc customer;
+
+insert into customer values(2,'poojitha');
+
+insert into customer(name) values('sowmya');
+
+create table movie(
+name varchar(100) not null,
+collection varchar(100)
+);
+
+select * from movie;
+
+desc movie;
+
+alter table movie modify column collection int;
+
+insert into movie(name) values('bahubali');
+
+select * from movie;
+
+

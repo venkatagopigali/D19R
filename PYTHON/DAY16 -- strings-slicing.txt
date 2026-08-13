@@ -1,0 +1,28 @@
+string :-- 
+
+>>>it is iterable
+>>>it is ordered collection
+>>>it is immutable 
+>>>we can access with index and slicing 
+
+index :-- we can access the only on letter a time 
+positive(forward) --> start from --> 0 , left to right
+negative(backward)--> start from --> -1, right to left
+>>>we can use [] to represent in index
+
+
+slicing :-- we can access the  more then one character at a time
+[start:stop:step]
+[start:stop]     --> step --> 1
+[:stop]          -->start --> 0 ,step --> 1
+[::step]          --> start --> 0 , stop -->end of string
+[start:]          --> stop -->end of string , step -->1
+
+
+>>>concatable      :-- will add the two or more string
++  :-- will add the two strings
+in     :-- will return true when value is present in string
+not in :-- will return true when values is not present in string
+
+
+>>>string methods

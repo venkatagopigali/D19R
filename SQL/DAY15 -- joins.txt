@@ -1,0 +1,80 @@
+joins :
+
+inner 
+left 
+right
+outer    :-- will return all values from both table and return only once which 			duplicates
+
+>>>left + union + right
+
+>>>select * from table1 left join table2 on table1.col_name=tabl2,.col_name
+union
+select * from table1 right join table2 on table1.col_name=tabl2,.col_name;
+
+
+cross      :--  will assign each and every in the first table with second table 		record or cartician product
+
+
+>>>select * from table1 cross table2;
+
+
+self      :--
+
+
+with condition      :-- by defaultly return inner join
+
+>>>select * from table1 join table2 on table1.col_name=table2.col_name;
+
+without condition   :-- by defaultly return cross join
+
+>>>select * from table join table2;
+
+
+natural    :-- will return common values from both tables and will return on 			unique columns
+
+>>>>select * from table1 natural join table2;
+
+=====================================================================================================================
+
+use d19r;
+
+select * from a1;
+
+select * from a2;
+
+
+select * from a1 left join a2 on a1.sno=a2.sno
+union
+select * from a1 right join a2 on a1.sno=a2.sno;
+
+select count(*) from a1 cross join a2;
+
+select * from a1 join a2 on a1.sno=a2.sno;
+
+select * from a1 join a2;
+
+select * from a1 join a1 as a;
+
+select * from a1 join a1 as a on a1.sno=a.sno;
+
+select * from a1 inner join a2 on a1.sno=a2.sno;
+
+select * from a1 join a2 on a1.sno=a2.sno;
+
+select * from a1 natural join a2;
+
+create table a3(
+sno int,
+email varchar(100),
+phone bigint
+);
+
+insert into a3 values(3,'jhon the don@gmail.com',1234567890),
+(4,'a1a2@gmail.com',1234567890);
+
+select * from a3;
+
+
+select * from a1 inner join a2 on a1.sno=a2.sno left join a3 on a1.sno=a3.sno;
+
+select * from a1 join a1 as e join a1 as a3;

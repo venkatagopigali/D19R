@@ -1,0 +1,22 @@
+list methods :-- 
+
+append()    :-- will add new element at end of list
+		>>>append(elements)
+
+extend()    :-- will add multiple value at end of list
+		>>>extend(elements)
+insert()    :-- will add the new element in particular position
+		>>>insert(index,value)
+pop()       :-- will delete the element which are present at end 		of list
+		>>>pop()
+pop(i)      :-- will delete element from list in perticular index 		position
+		>>>pop(index)
+remove()    :-- will delete element from list based particular 			value
+		>>>remove(value)
+reverse()   :-- will reverse the list
+sort()      :-- will mention the list in a specific order
+len()       :-- will give no.of character present in a list
+count()     :-- will return the value how many times repeated
+		count(value)
+copy()      :-- will copy the one list into another list
+clear()     :-- will remove all elements from the list

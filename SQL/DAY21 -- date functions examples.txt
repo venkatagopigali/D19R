@@ -1,0 +1,75 @@
+change the date format :
+-------------------------------
+>>>date_format(str_to_date(column_name,'old_format'),'%Y-%m-%d')
+
+use d19r;
+
+show tables;
+
+select * from orders_2024_jan_jun;
+
+select *,now() from orders_2024_jan_jun;
+
+select *,curdate() from orders_2024_jan_jun;
+
+select *,curtime() from orders_2024_jan_jun;
+
+desc orders_2024_jan_jun;
+
+alter table orders_2024_jan_jun modify column orderdate date;
+
+
+select *,date_add(orderdate,interval 2 day) from orders_2024_jan_jun;
+
+select *,date_format(str_to_date(orderdate,'%m/%d/%Y'),'%Y-%m-%d') from orders_2024_jan_jun;
+
+
+
+set autocommit=1;
+
+rollback;
+
+set sql_safe_updates=0;
+
+select * from orders_2024_jan_jun;
+
+update orders_2024_jan_jun set orderdate=date_format(str_to_date(orderdate,'%m/%d/%Y'),'%Y-%m-%d');
+
+commit;
+
+select * from orders_2024_jan_jun;
+
+alter table orders_2024_jan_jun modify column orderdate date;
+
+desc orders_2024_jan_jun;
+
+select *,date_add(orderdate,interval 20 year) from orders_2024_jan_jun;
+
+select *,date_sub(orderdate,interval 2 month) from orders_2024_jan_jun;
+
+
+select *,datediff(curdate(),orderdate) as e from orders_2024_jan_jun where datediff(curdate(),orderdate)<=600;
+
+select * from orders_2024_jan_jun;
+
+select sum(totalamount) from orders_2024_jan_jun where dayname(orderdate)='Monday';
+
+select *,monthname(orderdate) from orders_2024_jan_jun where monthname(orderdate)='may';
+
+select * from orders_2024_jan_jun;
+
+select * from sales;
+
+alter table sales rename column `order` to orders;
+
+update sales set orders=date_format(str_to_date(orders,'%m/%d/%Y'),'%Y-%m-%d');
+
+alter table sales modify column orders date;
+
+select * from sales;
+
+select date_sub(now(),interval 6 month);
+
+select * from sales where orders<=now() and orders>=date_sub(now(),interval 6 month);
+
+select * from sales where extract(month from orders) in (1,2,3,4,5,6);

@@ -1,0 +1,89 @@
+to identify the connection between two tables
+--------------------------------------------
+>>>drop
+>>>insert
+
+
+composite key :-- will mention at time two or more columns as primary key
+
+==============================================
+
+use d19r;
+
+create table admin(
+regno int primary key,
+name varchar(100),
+age int,
+course varchar(100)
+);
+
+desc admin;
+
+create table exam(
+regno int,
+marks int,
+grade char(1),
+foreign key (regno) references admin(regno)
+);
+
+select * from exam;
+
+select * from admin;
+
+desc admin;
+
+desc exam;
+
+drop table admin;
+
+drop table exam;
+
+show tables;
+
+drop table movie;
+
+select * from admin;
+
+select * from exam;
+
+insert into admin values(2,'poojitha',21,'ds');
+
+insert into exam values(2,90,'A');
+
+select * from student;
+
+select * from student_info;
+
+
+create table s1(
+id int primary key,
+name varchar(100) not null,
+email varchar(100) unique not null,
+age int,
+foreign key (id) references class(id)
+);
+
+create table class(
+id int primary key,
+marks int,
+grade char(1)
+);
+
+create table dept(
+id int,
+dept varchar(100),
+foreign key (id) references s1(id),
+foreign key (id) references class(id)
+);
+
+drop table class;
+
+create table s2(
+id int,
+name varchar(100),
+email varchar(100),
+age int,
+primary key(id,email)
+);
+
+desc s2;

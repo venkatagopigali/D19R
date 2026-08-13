@@ -1,0 +1,36 @@
+constraints :-- will send the data into table based on condition
+
+unique
+not null 
+check           :-- will send data into column based on condition
+default         :-- will send the data into column automatically 			when data is null
+auto_increment  :-- will assign a number the rows by defaultly start from 1 to n no.of rows
+
+
+===============================================================
+>>>create table table_name(
+column_name datatype check (condition)
+
+
+);
+
+>>>create table table_name(
+column_name datatype default 'value'
+
+);
+
+
+>>>create table table_name(
+column_name datatype unique auto_increment
+);
+
+
+>>>create table table_name(
+column_name datatype unique auto_increment
+)auto_increment=num;
+
+
+
+
+
+

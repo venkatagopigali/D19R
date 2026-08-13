@@ -1,0 +1,29 @@
+looping statements :-- will repeat block code for certain condition with minimum deviation for every iteration
+
+>>>iteration :-- a single circle :--will execute block of code at once 
+
+
+range()     :-- will return sequence of 		numerical values
+
+range(start,stop,step)
+range(start,stop)    -->by defaultly step-->1
+range(stop)          -->by defaultly start-->0,step -->1
+
+
+for       :-- will used when we know particular no.of iteration
+
+>>>for iterator sequence:
+	block of code
+
+while     :-- 
+
+
+
+
+
+
+
+
+
+
+

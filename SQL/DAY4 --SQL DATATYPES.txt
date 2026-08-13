@@ -1,0 +1,90 @@
+datatype :-- will check the which type of data it is
+
+
+numeric   :-- will store the numerical data
+----------------------------------------------
+int          :--  will store the numbers without decimal 
+		>>>4 bytes  >>>(2**31)-1
+bigint       :--  will store the numbers without decimal 
+		>>>8 bytes  >>>(2**63)-1
+float        :-- will store the numbers with decimal point
+		>>>4 bytes  >>>(2**31)-1
+		>>>will store 5 values after decimal
+double       :-- will store the numbers with decimal point
+		>>>8 bytes  >>>(2**63)-1
+		>>>will store more then 5 value after decimal
+decimal(s,p) :-- will store the numbers with decimal point
+		>>>will select no.of values after decimal point
+
+
+string   :-- will store the text type of data 
+----------------------------------------------------------------
+varchar(size) :-- will store the text type of data
+		  >>>250 character
+char(size)    :-- will store the text type of data
+		  >>>250 character
+		  >>>fixed size
+text          :-- will store the text type of data
+
+
+
+
+date  :-- will store the date and time type of information
+------------------------------------------------------------
+date    :-- will store the date type data
+	>>>'yyyy-mm-dd'
+time    :-- will store the time type of data
+	>>>HH:MM:SS
+datetime:-- will store the date and time
+	>>>'yyyy-mm-dd HH:MM:SS'
+
+===========================================================================
+
+show databases;
+
+use d19r;
+
+create table student_info(
+id int,
+mobile bigint
+);
+
+insert into student_info values(1.3,1.5);
+
+select * from student_info;
+
+insert into student_info values(2147483647,2147483648);
+
+
+create table product(
+price float,
+quantity double,
+tax decimal(10,2)
+);
+select * from product;
+
+insert into product values(2.123431234121332,2.123431234121332,2.123431234121332);
+
+create table emp(
+name varchar(100),
+pincode char(6),
+role text
+);
+
+insert into emp values('cm vijay','600095','cheif minister');
+
+select * from emp;
+
+create table info(
+dob date,
+dot time,
+doj datetime
+);
+
+select * from info;
+
+insert into info values('2026-12-04','09:56:30','2026-06-26 10:10:11');
+
+
+
+

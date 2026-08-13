@@ -1,0 +1,30 @@
+dictionary :-- collection elements
+>>>heterogeneous elements
+>>>will not accepts the duplicates into key, will allow the        	duplicates into values
+>>>will not change keys, but we can change the values
+>>>ordered collection
+
+declaration of dict:
+-------------------------------
+{}
+dict()
+
+
+dict methods:
+--------------------------------
+keys()     :-- will return the keys from the dict
+values()   :-- will return the values from the dict
+items()    :-- will return both key and values in the form tuple
+pop()      :-- will remove the particular key  value pair
+		>>>pop(key)
+popitem()  :-- will remove the last key value pair from dict
+update()   :-- will update the values in the dict
+		>>>update({key:values})
+get()      :-- will get specific value from the dict
+		>>>get(key)
+clear()    :-- will remove all elements from the dict
+copy()     :-- will copy the dict into another dict
+
+
+
+

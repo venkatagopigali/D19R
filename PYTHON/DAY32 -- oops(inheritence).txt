@@ -1,0 +1,30 @@
+OOPS :
+
+inheritance       :-- acquiring  properties from one class to anther class
+
+single level   :--  we have two classes , one parent class and one child class
+
+class class_name1:
+	#block of code 
+class class_name2(class_name1):
+	#block of code 
+
+
+multi level
+multiple
+hierarchal
+hybrid
+
+
+
+
+
+
+
+
+
+
+ 
+abstraction
+polymorphism
+encapsulation

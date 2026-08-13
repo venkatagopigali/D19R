@@ -1,0 +1,13 @@
+constructor  :-- it is a special type method which will execute automatically when object is created
+
+>>>def __init__(self)
+
+default constructor   :-- we don't have any parameters inside the constructor
+
+>>>def __init__(self)
+
+
+parameterized constructor : we can pass some parameters inside the constructor
+
+>>>def __init__(self,par1,par2-------)
+

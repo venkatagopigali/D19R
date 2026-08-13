@@ -1,0 +1,27 @@
+conditional statements/decision making statement :-  
+will execute flow line after satisfying particular condition
+>>>will make a decision based on condition
+
+if             :-- will execute block of when the condition true
+
+>>>if condition:
+	# block of code
+
+
+if -else      :-- here we have both true statement and false 			statement
+
+>>>if condition:
+	#true block
+   else:
+	#false block
+
+
+
+
+
+
+
+if elif
+if elif else
+nested if 
+match case

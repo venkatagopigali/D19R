@@ -1,0 +1,37 @@
+strigs :-- collection of characters with in quotes
+
+character :-- a single letter which is anything aplabets,numbers,special symbles
+
+
+declaration of string :--
+---------------------------------------
+we can declare the string in three ways
+single quote   :--' '   :-- in the we can mention any 				letter except '
+double quotes  :-- " "   :-- in this we can mention any
+				letter except "
+triple quotes  :--''' ''' :-- here we can not mention 				'''
+string properties :--
+-------------------------------------------------
+>>>string iterable        :-- it is sequence type of 			data type, we can iterate the 			string by loops
+>>>ordered collection     :-- here we are getting same 			order which we declare in 			specific orders
+>>>immutable              :-- we can not modify the 				string without changing 				memory location of data
+>>>we can access with indexing and silicing
+
+index :-- we can access only one character at a time
+
+>>>by using [values]
+
+positive (forward)   :-- starts from zero --> 
+			left to right
+
+negative (backward)  :-- starts from -1 				right to left
+
+
+
+>>>contacatable
+>>>string methods
+
+
+
+
+

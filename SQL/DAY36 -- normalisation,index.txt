@@ -1,0 +1,111 @@
+normalization
+
+1nf
+2nf
+3nf     :-- reduce the transitive dependency
+
+
+bcnf   :-- here we have two main column
+4nf
+5nf
+
+index :-- will easy to access 
+	>>>it will increase query speed
+
+index          :-- will accepts the null and duplicates
+
+create index index_name on tabe_name(column_name);
+
+>>>drop index index_name on table_name;
+
+
+unique index   :-- will accepts the null values but not 			accepts duplicates
+
+>>>create unique index index_name on table_name(column_name);
+
+
+primary index  :-- will not accepts both null and duplicates
+
+create primary index index_name on table_name(column);
+
+=================================================================================================
+
+use d19r;
+
+select * from book2;
+
+alter table book2 add column trainer varchar(100);
+
+set sql_safe_updates=0;
+
+update book2 set trainer=
+(
+case
+when skills='Sql' then 'raju yadav'
+when skills='python' then 'kowshik'
+when skills='power' then 'sravani'
+when skills='java' then 'sowmya'
+end
+);
+
+select * from book2 where trainer='kowshik';
+
+select * from v1;
+
+select * from v2;
+
+create view v3 as
+select distinct skills,trainer from book2;
+
+select * from v1;
+
+select * from v2;
+
+select * from v3;
+
+select v1.name from v1 inner join v2 on v1.sno=v2.sno inner join v3 on v2.skills=v3.skills where v3.trainer='kowshik';
+
+create table i1(
+sno int,
+name varchar(100)
+);
+
+select * from i1;
+
+create index t1 on i1(sno);
+
+insert into i1 values(4,'sravya'),
+(3,'sowmya'),
+(null,'ramya');
+
+select * from i1;
+
+truncate table i1;
+
+drop index k1 on i1;
+
+create unique index k1 on i1(sno);
+
+-- create primary index p1 on i1(sno);
+
+
+create table i2(
+sno int primary key,
+name varchar(100)
+);
+
+insert into i2 values(4,'rani'),
+(3,'rames');
+
+select * from i2;
+
+
+
+
+
+
+
+
+
+
+

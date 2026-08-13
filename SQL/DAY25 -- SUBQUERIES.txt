@@ -1,0 +1,10 @@
+subqueries
+
+single row
+multi row      :-- condition will return as single column and 		more then one rows
+		(in, not in)
+multi column   :-- 
+
+
+nested
+correlated

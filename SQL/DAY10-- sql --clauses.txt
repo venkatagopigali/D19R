@@ -1,0 +1,114 @@
+clause :-- will extract the data from table based on condition
+
+
+where       :-- will filter or grouping the data based on condition
+
+>>>select * from table_name where condition;
+
+
+order by    :-- will set the data in specific order either asc/desc
+
+>>>select * from table_name order by column_name asc;
+
+>>>select * from table_name order by column_name desc;
+
+
+
+
+
+limit
+distinct
+group by
+having
+
+
+
+offset
+=======================================================
+
+use d19r;
+
+show tables;
+
+select * from student;
+
+show tables;
+
+select * from orders_2024_jan_jun;
+
+rename table orders_2024_jan_jun to orders;
+
+select * from orders;
+
+
+
+
+select * from orders where paymentmethod='UPI';
+
+
+
+
+select * from orders where category='grocery';
+
+
+
+
+select * from orders where category='grocery' or paymentmethod='UPI';
+
+
+
+select * from orders;
+
+
+
+
+select * from orders where category='grocery'and quantity>9;
+
+
+
+
+select * from orders;
+
+
+
+
+select * from orders where region='East' and paymentmethod='upi' and quantity>=9;
+
+select * from orders;
+
+
+
+
+
+select * from orders order by customerid;
+
+select * from orders order by customerid desc;
+
+
+
+select * from orders where category='grocery' order by customerid desc;
+
+
+
+create table list(
+age int,
+name varchar(100)
+);
+
+insert into list values('20','poojitha'),
+(21,'pooja'),
+(45,'sampoo'),
+(23,'bob'),
+(51,'ramudu'),
+(25,'ramesh');
+
+select * from list;
+
+select * from list order by age desc;
+
+select * from list order by name desc;
+
+select * from orders;
+
+
+select * from orders order by region desc,price;

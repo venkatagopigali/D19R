@@ -1,0 +1,32 @@
+string methods :-- we can perform operation on only 		string type of data
+
+upper()       :-- will convert the lower case letters 		to upper case letter
+lower()       :-- will convert the upper case letter 		to lower case letters
+captilize()   :-- will convert into upper case only 		the first letter of word
+title()       :-- will convert into capital case each 		first letter in the word
+swapcase()    :-- will convert letters from upper to 		lower and lower to upper
+
+len()         :-- will return the no.of characters 		present in a strings
+replace()     :-- will give new text in the place old 		text
+		>>>replace(old_text,new_text)
+strip()       :-- will remove the spaces from left 		side and right side
+lstrip()      :-- will remove the left side spaces
+rstrip()      :-- will remove the right side spaces
+
+split()       :-- will separate string based on 		delimiter
+		>>>string.split(delimiter)
+join()        :-- will combine multiple string into 		single string
+		>>>delimiter.join(string)
+
+isupper()    :-- will return true when all characters 		are in upper case
+islower()    :-- will return true when all characters
+		are in lower case 
+isalpha()    :-- will return true when the string 		contain only alphabets
+isnumeric()  :-- will return true when the string 		contain only numbers
+isalnum()    :-- will return true string contain 		either alphabets or numbers
+
+ord()        :-- will convert the character into 		ascci
+chr()        :-- will convert the ascci value to 		character
+
+
+

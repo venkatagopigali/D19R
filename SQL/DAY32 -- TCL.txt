@@ -1,0 +1,29 @@
+tcl :-- transaction control language
+
+>>>transaction :-- the operation which will perform on table data i.e 
+		insert,update,delete
+
+>>>to get back the data from wrong transaction which data is stored as temperorly
+
+commit      :-- will store the data perminently
+		>>>commit;
+rollback    :-- we get back the data which store as temperorly
+		>>>rollback;
+savepoint   :-- will store the data as temperorly
+		>>>savepoint reference_name;
+
+disable the commit option  :-- 
+
+>>>set autocommit=0;
+
+
+
+
+start the transaction  :-- 
+
+begin;
+-- command
+
+
+
+

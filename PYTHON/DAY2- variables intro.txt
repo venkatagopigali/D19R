@@ -1,0 +1,10 @@
+variable :-- it is nothing but one container , will store the memory location of data 
+
+display the location of data:-- id()
+
+>>>rules variable creation 
+-----------------------------
+
+>>>variable can starts alphabets (a-z,A-Z)
+>>>can start with underscore (_)
+>>>cannot start with numbers(0-9)

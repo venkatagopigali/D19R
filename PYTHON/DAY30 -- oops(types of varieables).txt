@@ -1,0 +1,32 @@
+variable :-- we will store the memory location of data
+
+type of variable :
+
+global variable   :-- we can use any where in .py file
+			>>>we can declare outside class and 				outside functions
+
+
+
+local variable   :-- we can use in particular block of code
+		       >>>inside functions and inside methods
+
+		scope :-- life time of variable
+
+
+
+instance        :-- we can access variable in one method which 			           we are declare in anothor method
+		>>>self.variable_name
+
+class  variable :--  we can use inside class and it's sub classes
+		we can declare inside class and outside methods
+		>>>classname.variable 
+
+
+
+
+
+
+
+
+
+

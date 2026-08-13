@@ -1,0 +1,73 @@
+CASE :-- will form the conditional column 
+		>>>will perform more then one condition at a time
+
+case 
+when condition1 then 'result1'
+when condition2 then 'result2'
+when condition3 then 'result3'
+else 'result'
+end
+
+CTE :-- common table expression :-- will used to perform operation on temporary columns
+
+with cte_name as(
+-- command 
+)
+select * from cte_name;
+
+
+=========================================================================================
+
+use d19r;
+
+show tables;
+
+select * from orders_2024_jan_jun;
+
+select *,case
+when paymentmethod='UPI' then 'U'
+when paymentmethod='COD' then 'C'
+when paymentmethod='Card' then 'Ca'
+else paymentmethod
+end as code from orders_2024_jan_jun;
+
+with cte1 as(
+with cte as(
+select *,case
+when quantity>=7 then 'A'
+when quantity>=3 then 'B'
+else 'C'
+end as grade from orders_2024_jan_jun
+)
+select *,case
+when category='Grocery' then 'G'
+when category='Home decor' then 'H'
+when category='Electronics' then 'E'
+else 'F'
+end as code from cte where grade='A'
+)
+select * from cte1 where code='H';
+
+
+
+
+
+
+
+select * from orders_2024_jan_jun where grade='A';
+
+
+select * from (select *,case
+when quantity>=7 then 'A'
+when quantity>=3 then 'B'
+else 'C'
+end as grade from orders_2024_jan_jun ) as a;
+
+select * from orders_2024_jan_jun;
+
+
+
+create table d1(
+name varchar(2),
+id char
+);

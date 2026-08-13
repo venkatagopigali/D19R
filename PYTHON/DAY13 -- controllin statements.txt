@@ -1,0 +1,15 @@
+controlling statements :-- will control the 				iterations 
+
+break     :-- will terminate block of code from 		current iteration
+>>>break
+
+continue  :--  will skip the current iteration 
+
+>>>continue
+
+pass      :-- will mention empty block of code
+
+>>>pass
+
+
+

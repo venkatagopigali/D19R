@@ -1,0 +1,37 @@
+python :-- 
+
+>>>it is programming language
+>>>language :-- it is mediator to communicate wit others
+>>>programing :-- it is set of instruction
+
+
+>>>it is high-level programing 
+
+>>>pvm -- python virtual machine :-- will convert the high-level low level and low level - high level
+
+>>>python is both compile and interpreted language
+
+>>>complier :-- will check entire file at a time 
+>>>interpreted :-- will check the line by line by code 
+
+>>>it is dynamically type language :-- there is no need to mention datatypes
+
+>>>it is both object oriented and procedure oriented
+
+uses :--
+---------------------------
+>>> data science
+>>>llm/gen ai/rag
+>>>250+ libreries
+>>>web application
+>>apps
+
+
+
+
+
+
+
+
+
+

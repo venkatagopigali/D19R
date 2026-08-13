@@ -1,0 +1,137 @@
+trigger :
+
+delimiter $$
+create trigger trigger_name
+{before|after} {insert|update|delete } on table1
+for each row
+begin
+-- commandws
+end$$
+delimiter ;
+
+
+new    :-- we send the new data into table
+old    :-- we can access the data which is present in table
+
+
+remove trigger:
+--------------------------------------------
+>>>drop trigger trigger_name;
+
+================================================================
+
+use d19r;
+
+select * from bank;
+
+use information_schema;
+
+show tables;
+
+select * from triggers where trigger_schema='d19r';
+
+select * from bank;
+
+insert into bank values(12345,'radha','Hyd',1);
+
+select * from statement;
+
+select * from bank;
+
+set sql_safe_updates=0;
+
+update bank set balance=1000 where name='varshith';
+
+delimiter $$
+create trigger sravani
+after update on bank
+for each row
+begin
+insert into statement(cre_deb) values('bank balance updated.....');
+end$$
+delimiter ;
+
+select * from bank;
+
+update bank set balance=2000 where name='raju';
+
+select * from statement;
+
+delete from bank where acc=12345;
+
+delimiter $$
+create trigger anjali
+after delete on bank
+for each row
+begin
+insert into statement(cre_deb) values('acc deleted.......');
+end $$
+delimiter ;
+
+select * from bank;
+
+delete from bank where acc=33333;
+
+select * from statement;
+
+insert into bank values(99999,'sravya','HYD',-100);
+
+delimiter $$
+create trigger sabitha
+before insert on bank
+for each row
+begin
+if new.balance<500 then
+signal sqlstate '45000' set message_text='please maintain min 500 rupees.....';
+end if ;
+end$$
+delimiter ;
+
+select * from bank;
+
+insert into bank values(44444,'rani','Andaman',500);
+
+select * from statement;
+
+update bank set balance=-200 where acc=66666;
+
+delimiter $$
+create trigger kalyan
+before update on bank
+for each row
+begin
+if new.balance<0 then
+signal sqlstate '45000' set message_text='insufficient balence...';
+end if;
+end$$
+delimiter ;
+
+select * from bank;
+
+update bank set balance=100 where acc='44444';
+
+delete from bank where acc=55555;
+
+select * from statement;
+
+delimiter $$
+create trigger dinesh
+before delete on bank
+for each row
+begin
+if old.balance!=0 then
+signal sqlstate '45000' set message_text='unable to delete the acc....';
+end if ;
+end$$
+delimiter ;
+
+select * from bank;
+
+update bank set balance=0 where name='raju';
+
+delete from bank where acc=77777;
+
+select * from statement;
+
+drop trigger ayushmanbhava;
+

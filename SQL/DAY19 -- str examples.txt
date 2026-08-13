@@ -1,0 +1,66 @@
+use d19r;
+
+show tables;
+
+create table user(
+id int primary key,
+first_name varchar(100),
+last_name varchar(100),
+age int,
+email varchar(100),
+quantity int,
+price int
+);
+
+alter table user add column product varchar(100) after email;
+
+select * from user;
+
+insert into user values
+(1,'mahendhra','bahubali',45,'bahubali@gmail.com','biryani',1,100),
+(2,'sleepy','swapna',23,null,'pizza',2,120),
+(3,'jr ', 'ntr',50,null,'biryani',5,1000),
+(4,'kattappa',null,60,'vennupotu@gmail.com','knife',4,10);
+
+select * from user;
+
+select *,concat(first_name,last_name) from user;
+set sql_safe_updates=0;
+
+update user set last_name="" where last_name is null;
+
+select *,concat(first_name,last_name,'@gmail.com') from user;
+
+update user set email=concat(first_name,last_name,'@gmail.com') where email is null;
+
+select * from user;
+
+update user set first_name=concat(first_name,' ',last_name);
+
+alter table user drop column last_name;
+
+alter table user rename column first_name to full_name;
+
+select * from user;
+
+select *,upper(full_name) from user;
+
+update user set full_name=lower(full_name);
+
+select *,length(full_name) from user;
+
+select *,replace(full_name,'jr  ntr','@') from user;
+
+select * from user;
+
+select *,concat(upper(left(full_name,1)),lower(substr(full_name,2))) from user;
+
+update user set full_name=concat(upper(left(full_name,1)),lower(substr(full_name,2)));
+
+select *,right(email,10) from user;
+
+select *,concat(reverse(substr(reverse(email),11)),'@yahoo.com') from user;
+
+update user set email=concat(reverse(substr(reverse(email),11)),'@yahoo.com') where id in (2,4);
+
+select * from user;select *,trim(full_name) from user;

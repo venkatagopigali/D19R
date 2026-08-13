@@ -1,0 +1,90 @@
+EXTRA OPEARTOR :-- will perform an operation between operands or values or operand to values
+
+like      :-- will extract the data from table based on 		pattern of string
+>>>select * from table_name where column_name like 'pattern_string';
+
+wildcard function:
+----------------------
+%   :-- will read the multiple characters at time 
+_   :-- will read single character at a time
+
+
+between   :-- will extract the information between two range of numbers
+		>>>here start and end value both are included
+>>>select * from table_name where column_name between start and end;
+
+
+as   :--  will change the column or table name temperorly
+
+>>> as new_name
+
+
+
+
+union
+union all
+intersect
+except
+
+==============================================================================================
+
+use d19r;
+
+show tables;
+
+select * from customer;
+
+insert into customer values(3,'vijay'),
+(4,'venkata gopi'),
+(5,'hasini'),
+(6,'siddu'),
+(7,'santhosh'),
+(8,'siri');
+
+select * from customer;
+
+select * from customer where name like 's%';
+
+
+select * from customer where name like 'sir%';
+
+select * from customer where name like 's___';
+
+select * from customer where name like '_____';
+
+select * from customer where name like '%i';
+
+select * from customer where name like 's%' or name like 'h%';
+
+select * from customer;
+
+select * from customer where id in (1, 8);
+
+select * from customer where name like 's%' or name like 'h%';
+
+insert into customer values(9,'akshaya'),
+(10,'usha'),(11,'umesha'),(12,'ishan');
+
+select * from customer where name like 'a%' or name like 'e%' or name like 'i%' or name like 'o%' or name like 'U%';
+
+select * from customer where name like '%a' or name like '%e' or name like '%i' or name like '%o' or name like '%u';
+
+select * from customer;
+
+
+select * from customer where
+(name like 'a%' or name like 'e%' or name like 'i%' or name like 'o%' or name like 'u%')
+and
+(name like '%a' or name like '%e' or name like '%i' or name like '%o' or name like '%u');
+
+
+select * from customer;
+
+select * from customer where id between 3 and 8;
+
+select * from customer where id>=3 and id<=8;
+
+select * from customer;
+
+
+select *,id*2 as new_id from customer;

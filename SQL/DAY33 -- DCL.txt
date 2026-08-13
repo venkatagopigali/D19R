@@ -1,0 +1,23 @@
+dcl :-- data control language  :-- will give the permission and remove the permission to user
+
+
+user creation :
+--------------------------------
+>>>create user user_name@localhost identifieds by 'password';
+
+
+grant   :-- will give permission to user
+
+>>>grant permissions on database_name.table_name to user_name@localhost;
+
+
+revoke  :-- will remove the permission from user
+
+>>>revoke permissions on database_name.table_name from user_name@localhost;
+
+
+remove user:
+--------------------------
+>>>drop user user_name@localhost;
+
+

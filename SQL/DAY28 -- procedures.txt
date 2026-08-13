@@ -1,0 +1,111 @@
+stored procedure :-- will reuse the block command
+
+>>> reduce space complexity
+>>> reduce time complexity
+
+creation of procedure:
+-----------------------------------
+
+delimiter $$
+create procedure procedure_name()
+begin
+-- command
+end $$
+delimiter ;
+
+calling procedure :--
+-----------------------------
+>>>call procedure_name();
+
+without parameters  :-- here we don't pass any parameters into procedure
+
+delimiter $$
+create procedure procedure_name()
+begin
+-- command
+end$$
+delimiter ;
+
+>>>call procedure_name()
+
+
+
+with parameters :-- we can pass the parameters into procedure 
+
+
+delimiter $$
+create procedure procedure_name(par1,par2-----)
+begin
+-- command
+end$$
+delimiter ;
+
+>>>call procedure_name(arg1,arg2-----)
+
+in
+out
+inout
+
+
+=========================================================
+
+use d19r;
+
+select * from emp;
+
+delimiter $$
+create procedure kowshik()
+begin
+select * from emp;
+end $$
+delimiter ;
+
+call kowshik();
+
+delimiter $$
+create procedure age()
+begin
+select * from emp where age>30;
+end $$
+delimiter ;
+
+call age();
+
+delimiter $$
+create procedure kalyan(a int)
+begin
+select * from emp where age>a;
+end $$
+delimiter ;
+
+select * from emp;
+
+call kalyan(20);
+
+call kalyan(35);
+
+call kalyan(32);
+
+delimiter $
+create procedure dept(a varchar(100))
+begin
+select * from emp where department=a;
+end$$
+delimiter ;
+
+call dept('gopi');
+
+select * from emp;
+
+delimiter $$
+create procedure c_d(d varchar(100),c varchar(200))
+begin
+select * from emp where city=c and department=d;
+end$$
+delimiter ;
+
+call c_d('Hr','delhi');
+
+
+
+

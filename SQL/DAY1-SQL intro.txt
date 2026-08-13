@@ -1,0 +1,27 @@
+data :-- collection of information or raw facts
+	>>> text,files,mp3,mp4,images etc-- 
+
+database :-- will used to store the data
+
+RDBMS  :-- relational database management system
+>>>will store in the form tables
+>>>collection of rows and columns or records and fields
+>>>will used access the data through 	SQL
+
+DBMS   :-- database management system
+>>>will store the data in the form of text
+	>>>json
+>>>will access the data thorough MongoDB/NoSQL
+
+platform that accepts RDBMS:
+
+MySQL
+Postgree
+Oracle
+SqlServer
+SQLite
+Express
+
+
+
+

@@ -1,0 +1,35 @@
+inheritance :
+
+single level
+multi level    :-- here we have 3 classes in the pattern of 
+			grand parent, parent ,child
+
+class grand_parent:
+	#block of code
+class parent(grand_parent):
+	#block of code
+class child(parent):
+	#block of code
+
+
+multiple     :-- here we have more the one parent class and one 		child class
+class parent1:
+	#block of code
+class parent2:
+	#block of code
+class child(parent1,parent2):
+	#block of code
+
+
+hierarchal   :-- here we have more then one child class and single 			parent class
+
+class parent:
+	#block of code
+class child1(parent):
+	#block of code
+class child2(parent):
+	#block of code
+
+
+
+hybrid

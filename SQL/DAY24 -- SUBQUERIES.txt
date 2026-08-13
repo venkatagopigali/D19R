@@ -1,0 +1,9 @@
+sub queries :-- query with in the another query
+
+single row     :-- condition will return as single row 			and single column
+		(=,>=,<=,>,<,!= or <>)
+multi row      :-- condition will return as more then 1 			row and single columns
+		(in,not in)
+multi column
+nested 
+correlated

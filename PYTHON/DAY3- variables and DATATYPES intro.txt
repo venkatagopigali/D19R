@@ -1,0 +1,39 @@
+variable :-- will store the memory location of data
+
+>>>can start with alphabets (a-z,A-Z)
+>>>can start with underscore (_)
+>>>can not start with numbers(0-9)
+>>>will not contain any special symbols expect (_)
+	ex:--@,#,$,%,+,-,;,& etc
+
+>>>will not use keyword as variables
+	>>>if,and,or,not etc--
+
+
+
+datatype :- will identify the which type of data it is
+
+>>>type() :-- will display datatype of data
+
+primitive datatype      :-- we can send the only one 			value at time into variable
+
+int       :-- will store the numerical type information 	      with out decimal points
+		>>>4bytes
+float     :-- will store the numerical type of data with 		decimal points
+		>>>4bytes
+string
+boolean
+complex
+None
+
+
+non primitive datatype  :-- we can send more then one 			values at a time into variable
+
+
+
+
+
+
+
+
+

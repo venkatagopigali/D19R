@@ -1,0 +1,37 @@
+aggregate functions :-- will convert the multiple cell information into single cell of information
+
+sum()       :-- will add the all elements 
+min()       :-- will return lowest values
+max()       :-- will return highest values
+average()   :-- will calculate sum of values/count of values
+count()     :-- will count the no.of cells contain data
+		only numbers and date
+counta()    :-- will count ther no.of cells contain data with any datatypes  
+countblank():-- will count the no.of cells are null
+
+
+operators :-- will perform operation in between operands or values or operand to values 
+
+arithmetic operators   :-- will perform mathematical operations
+				(+,-,*,/)
+relational operators   :-- will compare the two values 
+				(=,>,<,>=,<=,<>)
+logical operators      :-- will ckeck the condition is true or false
+
+			and  :-- will return true when all conditions are true
+					=AND(con1,con2,con3------)
+			or   :-- will retunr treu when at least one condition is true
+					=OR(con1,con2,con3------)
+			not  :-- true-->flase,false-->true
+					=NOT(con)
+
+
+
+
+
+
+
+
+
+
+

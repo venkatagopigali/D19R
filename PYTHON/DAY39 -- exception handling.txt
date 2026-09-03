@@ -1,0 +1,40 @@
+errors :-- it is nothing but a mistake
+
+syntax errors --> compile time error  :-- the errors raised in the 		the process of code compilation
+		>>>raise by developers 
+		>>>reduce syntax error by correcting the syntax
+
+logical errors --> run time error     :-- the error are raised in 			the process of run time i.e. code execution
+		>>>raised by user
+		>>>reduce the run time error by using exception 		handling
+
+
+exception handling :-- which will deal with run time errors 
+
+try :        :-- we mention code in try which possible case to 			raise the run time error
+except:      :-- will skip the error
+
+try:
+	#bolck of code which will raise error
+except:
+	# msg
+
+
+type of exceptions :
+--------------------------------------------
+ZeroDivisionError     :-- will raise when we are trying to divided 				with zero
+NameError             :-- will raise when we are trying to print 				variable without declaration
+ValueError
+FileNotFoundError
+IndexError
+KeyError
+
+
+
+
+
+
+
+
+
+

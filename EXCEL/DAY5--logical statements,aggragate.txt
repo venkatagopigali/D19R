@@ -1,0 +1,41 @@
+logical statements :
+
+if 
+ifs
+switch   :-- will used to perform more then one condition
+		>>>here more then one true block and one false block
+
+switch(true()/false(),cond1,true1,cond2,true2,------,false_result)
+
+
+=SWITCH(FALSE(),C2="Sales","S",C2="HR","H",C2="It","I","M")
+
+=SWITCH(TRUE(),C2="Sales","S",C2="HR","H",C2="It","I","M")
+
+
+aggregate + logical statements :
+-----------------------------------------
+
+aggif()   :-- aggif("condition_column","values","operation_column")
+aggifs()  :--- aggifs("operation_column","condition_column1","Values","condition_column2","Values"----)
+
+sumif()
+sumifs()
+minifs()
+maxifs()
+averageif()
+averageifs()
+countif()
+countifs()
+
+
+
+
+
+
+
+
+
+
+
+

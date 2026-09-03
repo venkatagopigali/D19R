@@ -1,0 +1,36 @@
+ACCESS MODIFIERS :--
+will provide the security to code i.e. methods and variables with in class
+
+public      :-- we can use any where in entire .py file
+		>>>variable
+
+protected  :-- we can use class and its sub classes
+		>>> _variable
+private    :-- we can use in only one class
+		>>> __variable
+
+
+
+name mangling  :-- we can access the private variable in anthor class
+
+>>> _classname__varibalename
+
+
+abstraction  :-- will hide the implementation of code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

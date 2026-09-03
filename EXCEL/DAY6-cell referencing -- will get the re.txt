@@ -1,0 +1,6 @@
+cell referencing :-- will get the result based another cell name
+
+relative    :-- here the both row and column address will be changed
+absolute    :-- here the both row and column cannot be changed
+			>>> $
+mixed       :-- here if column is fixed the row will be change or if row is 		fixed the column will changed

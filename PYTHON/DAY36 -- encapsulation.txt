@@ -1,0 +1,28 @@
+encapsulation :-- will provide the security to the data i.e. variable and methods which 			inside the class
+
+super()    :-- will used to extract method from parent class to child class
+		>>>super().method_name()
+mro()      :-- method resolution  order :-- which class methods are exceuted first
+		>>>class_name.mro()
+		>>>class_name.__mro__
+
+
+access modifiers :-- will provide security to methods or variable
+
+public
+protected
+private
+
+
+
+
+
+
+
+
+
+
+
+
+
+

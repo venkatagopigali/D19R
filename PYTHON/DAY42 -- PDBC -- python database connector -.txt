@@ -1,0 +1,16 @@
+PDBC :-- python database connector :-- will build the connect between backend and database 
+
+mysql.connector     :-- 
+pymysql 
+
+>>>pip install pymysql
+
+
+cursor() :-- will check the syntax is correct or not 
+execute():-- will execute the query
+commit() :-- will save the in MySQL
+fetchone() :-- will return first database or table
+fetchall() :-- will return all database or tables
+%s         :-- will read the value dynamically
+
+            

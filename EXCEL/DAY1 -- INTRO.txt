@@ -1,0 +1,35 @@
+EXCEL :-- we can use to store the data in the form table
+		>>>it is one type of RDBMS
+		>>>Microsoft
+
+row :-- the horizontal block
+	(1,2,3,4,---------)
+column :-- the vertical block
+	(A,B,C----)
+cell   :-- the combination of single row and single column
+	>>>  column_name,row_name
+	active cell :-- the cell which we are click
+worksheet :-- a single page  i.e nothing but a table
+workbook  :-- collection of worksheets
+Namespace :-- will return the active cell name
+formula bar :-- will write function or formulas for calculation
+
+segregation excel:
+
+ribbon
+data space i.e data view
+page navigation
+
+
+
+
+
+
+
+
+
+
+
+
+
+

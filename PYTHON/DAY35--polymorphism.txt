@@ -1,0 +1,24 @@
+polymorphism :
+
+
+duck typing
+method overloading
+method overriding     :-- here the new method will replace the old methods 			i.e. override the previously mentioned methods
+operator overloading  :-- we can change the operation for operator
+
+__add__()   -->  +
+__sub__()   -->  -
+__mul__()   -->  *
+__truediv__()--> /
+__floordiv__() --> //
+__mod__()     --> %
+__pow__()    --> **
+__eq__()     --> ==
+__ne__()     --> !=
+__lt__()    -->  <
+__le__()    --> <=
+__gt__()    --> >
+__ge__()    --> >=
+
+
+

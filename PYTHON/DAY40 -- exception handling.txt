@@ -1,0 +1,25 @@
+EXCEPTION HANDLING :
+
+ZeroDivisionError
+NameError
+ValueError         :-- will raise the datatypes are mismatched
+FileNotFoundError  :-- will raise due to change the filename or 			change the file location
+IndexError         :-- will raise when the index position not 				in the list
+KeyError           :-- will raise when key is not present in dict
+			without using get 
+
+
+
+Exception :-- will accepts any kind of error except syntax error
+
+
+
+
+
+
+
+
+
+
+
+

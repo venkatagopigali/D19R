@@ -1,0 +1,102 @@
+use d19r;
+
+show tables;
+
+select * from ecommerce_dirty_data;
+
+rename table ecommerce_dirty_data to project;
+
+select * from project;
+
+desc project;
+
+select * from project;
+
+desc project;
+
+alter table project rename column city to location;
+
+alter table project modify column order_id int;
+
+alter table project modify column quantity int;
+
+select * from project;
+
+set sql_safe_updates=0;
+
+update project set quantity=null where quantity='';
+
+update project set price=null where price='';
+
+alter table project modify column price float;
+
+update project set pincode=null where pincode='';
+
+alter table project modify column pincode int;
+
+alter table project modify column order_date date;
+
+select * from project;
+
+update project set order_date=date_format(str_to_date(order_date,'%m/%d/%Y'),'%Y-%m-%d');
+
+desc project;
+
+select * from project;
+
+update project set email=null where email='';
+
+select count(email) from project;
+
+select count(price) from project;
+
+update project set location=null where location='';
+
+
+update project set payment_method=null where payment_method='';
+
+
+select * from project;
+
+
+select count(*)-count(price) from project;
+select count(*)-count(email) from project;
+select count(*)-count(location) from project;
+
+select * from project;
+
+select product,min(price) from project group by product;
+
+delimiter $$
+create procedure p_p_u(p1 int,p2 varchar(100))
+begin
+update project set price=p1 where product=p2;
+end$$
+delimiter ;
+
+select * from project;
+
+call p_p_u(2000,'Keyboard');
+
+call p_p_u(300000,'Camera');
+
+update project set price=(
+case 
+when product='Charger' then 3000
+when product='Mouse' then 1000
+else price
+end
+);
+
+select * from project;
+
+
+select 
+(select count(*) from project)-
+(with cte as
+(select distinct * from project)
+select count(*) from cte);
+
+select * from project;
+
+select distinct location from project;

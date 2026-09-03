@@ -1,0 +1,25 @@
+exception handling :
+
+else  :--- it is nothing but false block 
+	>>>will execute block of code when try block is 		successfully executed
+
+try:
+	#block of code
+except Exception as e:
+	# block of code
+else:
+	# block of code
+
+finally :-- will execute block of code if exception is occur or not 
+
+try:
+	#block of code
+except Exception as e:
+	# block of code
+finally:
+	# block of code
+
+
+
+
+

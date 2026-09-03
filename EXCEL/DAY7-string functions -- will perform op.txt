@@ -1,0 +1,21 @@
+string functions :-- will perform operation on any type of data
+
+concatenate()   :-- will add the two or more strings
+upper()         :-- will covert the lower case letter to upper case
+lower()         :-- will convert the upper case letters to lower case
+length()        :-- will return no.of charcters
+replace('original_str',start_pos,no.of_chars,'new_text')       
+		:-- will change the old text with the new text
+left('original_str',no.of_char)
+		:-- will split the string by default from left side
+right('original_str',no.of_char)
+		:-- will split the string by default from right side
+mid('original_str',start_pos,no.of_char)
+		:-- will split the string 
+trim()          :-- will remove the starting and ending spaces 
+textjoin()
+substitute()
+proper()
+exact()
+find()
+search()

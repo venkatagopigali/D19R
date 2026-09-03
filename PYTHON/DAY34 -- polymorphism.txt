@@ -1,0 +1,23 @@
+polymorphism :-- here the methods or variable are change as per situation
+		>>>ploy-->many ,morphism --> forms
+
+duck typing             :-- here we will give high priority to method then 
+			compare to objects				
+class A:
+	#block code
+class B:
+	#block code
+
+
+method overloading   :-- 
+
+
+
+
+
+
+
+
+
+method overriding
+operator overloading

@@ -1,0 +1,7 @@
+logical statement     :-- based on condition will return the result
+
+if()       :-- here we have one true block and one false block
+		>>>if(condition,"True","False")
+ifs()      :-- used to perform more then one condition
+		>>>ifs(condition1,"True1",condition2,"True2",--)
+switch()

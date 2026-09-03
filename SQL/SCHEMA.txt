@@ -1,0 +1,77 @@
+use d19r;
+
+create table recuirter(
+empid int primary key,
+name varchar(100) not null,
+email varchar(100) unique not null,
+password varchar(100)
+);
+drop table job_app;
+create table job_app(
+email varchar(100)  primary key,
+name varchar(100) not null,
+password varchar(100),
+skills varchar(100),
+qualification varchar(100),
+mobile bigint,
+experince int
+);
+
+select * from recuirter;
+
+select * from job_app;
+
+create table status(
+email varchar(100),
+status varchar(100),
+dot datetime default now()
+);
+
+select * from status;
+
+delimiter $$
+create trigger a1 
+after insert on job_app
+for each row
+begin
+insert into status(email,status) values(new.email,'new application received');
+end$$
+create trigger a2
+after update on job_app
+for each row
+begin
+insert into status(email,status) values(old.email,'details updated...');
+end$$
+create trigger a3
+after delete on job_app
+for each row
+begin
+insert into status(email,status) values(old.email,'application withdraw');
+end$$
+create trigger a4
+before insert on job_app
+for each row
+begin
+if new.qualification not in ('b.tech','btech','bachelor of technology') then 
+signal sqlstate '45000' set message_text='your are not eligible';
+end if;
+end$$
+delimiter ;
+
+select * from job_app;
+
+insert into job_app values('sravya123@gmail.com','sravya','1234','what not','degree',1234567890,3);
+
+update job_app set password=45678 where email='sravya@yahoo.com';
+
+select * from status;
+
+delete from job_app where email='sravya@yahoo.com';
+
+select * from job_app;
+
+truncate table job_app;
+
+truncate table status;
+
+select * from status;

@@ -1,0 +1,23 @@
+indexing :-- we can used to access the single element 
+
+positive indexing  :-- start from 0 --> left to right
+negative indexing  :-- start from -1 --> right to left
+
+1d   :--[column_index]
+2d   :--[row_index,column_index]
+3d   :--[matrix_index,row_index,column_index]
+
+
+slicing :-- will used to access the more then one element 
+
+
+by default values :-- step-->1, start --> 0 , end --> stop-1
+			if step value is negative end --> stop+1
+[start:stop:step]
+[start:stop]   
+[:stop:] 
+[::step]
+[start::]   
+
+
+

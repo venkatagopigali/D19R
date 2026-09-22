@@ -1,0 +1,37 @@
+pivote :-- will summarize the information
+
+EDA :-- exploratory data analysis :-- will identify the suitable 		graph for the data
+
+uni variant       :-- will send either continuous data or categorical data
+			>>>pie,histogram
+bi variant        :-- will send the both continuous and categorical data
+			>>>bar,line,scatter
+multi variant     :-- will send the more then one continuous data and more 			then one categorical data
+			>>>treemap,heatmap,scatter,waterfall model etc--
+
+continuous data   :-- the value in between the two range of values
+categorical data  :-- the values formed by condition or the repeated 				information 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

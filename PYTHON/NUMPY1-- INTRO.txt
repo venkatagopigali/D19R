@@ -1,0 +1,15 @@
+NUMPY  :-- numerical python :-- will used to perform mathematical operation 
+
+		>>>install the numpy
+		>>>pip install numpy
+		
+>>> here we can store the information in the form of array
+	>>>it homogeneous collection  :-- will accepts same kind of datatypes
+
+nd array :-- n - dimensional array :
+------------------------------------------
+1d :-- 1 dimensional :-- here we have only columns 
+2d :-- 2 dimensional :-- here we have both rows and columns
+3d :-- 3 dimensional :-- here we have matrices,rows,column
+
+>>>will reduce the time complexity

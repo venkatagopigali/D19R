@@ -1,0 +1,30 @@
+array creation :
+------------------------------
+using list and tuple 
+using arange() and linspace()
+using eye and identity
+using zeros and ones
+using random       :- we can create array with random elements 
+
+>>>random()  --> will return numbers in between zero and one
+>>>rand()    --> will return numbers in between zero and one 
+			--> here 0 and 1 are excluded 
+>>>randn()   --> will return normal distribution values 
+		>>>mean =0 ,std=1 
+>>>randint() --> will return the numbers in between two range of numbers 
+		>>>here start value included and end value excluded
+
+
+using tile and astype and reshape
+--------------------------------------------
+>>>tile() :--  will repeat the array 
+
+>>>astype :-- will used to change the datatype
+
+>>>reshape() :-- will change the shape of array or dimension of array
+ 
+
+
+
+
+

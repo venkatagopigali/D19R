@@ -1,0 +1,8 @@
+lookups :-- we can perform searching operation on data 
+
+vlookup      :-- we can perform searching on vertical block and get the 		      data from horizontal block
+		>>>vlookup(search_value,table_range,return_column,true/false)
+hlookup      :-- we can perform searching operation in hozental block arn return 		result in vertical block 
+		>>>hlookup(search_value,table_range,return_rows,true/false)
+xlookup      :-- we can perform both vlookup and hlookup operations in table 
+index+match  :-- we can used search only one  value

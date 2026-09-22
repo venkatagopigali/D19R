@@ -1,0 +1,30 @@
+array creation :--
+
+using list and tuple
+using arange() or linspace()
+using eye or identity
+using zeros and ones
+using random
+using tile,reshape,astype 
+
+numpy properties:
+--------------------------------------
+ndim      :-- will return the dimension of array
+shape     :-- will return the shape of array
+		1d ---> (no.of columns,)
+		2d ---> (rows,columns)
+		3d ---> (matrics,rows,columns)
+
+size      :-- will return the no.of elements in an array
+		1d --> no.ofcolumns
+		2d --> row*column
+		3d --> matrics*row*column
+dtype     :-- will return the datatype of  elements 
+itemsize  :-- will return space occupied by each and every element
+nbytes    :-- will return space occupied by total array
+		 ---> size*itemsize
+
+
+
+
+

@@ -1,0 +1,41 @@
+schema :-- 
+
+bus         :-- if we are consider any table it will connect side 		two table except first and last table 
+ring        :-- if we are consider any table it will connect side 			two table 
+star        :-- here more then two table are connected with then 			single table
+snow flake  :-- collection of star schema
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

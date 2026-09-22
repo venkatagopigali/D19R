@@ -1,0 +1,11 @@
+DATA MODELING :-- will used to build the connection between two or more tables 
+
+i.e cardinalitity 
+
+types connections :
+--------------------------------------
+one to one (1-1)     :-- here there will no duplicates in both connected columns 
+one to many (1-*)    :-- here there will be no duplicates in first table and duplicates in 			second table which the connected columns  
+many to one (*-1)    :-- here there will be  duplicates in first table and no duplicates in 			second table which the connected columns 
+many to many (*-*)   :-- here there will be duplicates in both tables 
+

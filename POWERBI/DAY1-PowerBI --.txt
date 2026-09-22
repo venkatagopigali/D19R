@@ -1,0 +1,53 @@
+PowerBI :-- 
+
+BI :-- business intelligence tool 
+>>>to convert the data into data visualization 
+
+excel      :-- we have only basic level of charts 
+		>>>we can deal with only small amount of data
+python     :-- we need to write the code 
+tableau    :-- it is paid version 
+powerbi    :-- free version 
+		>>>here we can draw advance level of graphs 
+		>>>we can deal with large amount of data 
+
+componenets in powerbi :-- 
+--------------------------------
+POWERBI DESKTOP   :-- will used to connect the various type 			of data files
+		>>>excel,csv,pdf,word,database,snowflake 
+POWERBI QUERY     :-- will used to perform cleaning operations 				on data
+			>>>ETL --> ELT
+POWERBI VIEW      :-- to create the dashboards 
+report view       :-- to create the dashboards 
+table             :-- to display the table data
+model             :-- will used to establish the connection  				between two or more tables
+
+POWERBI PIVOTE    :-- by default components 
+		 >>> DAX :-- data analysis expressions 
+			>>>mathematical calculations 
+POWERBI MAPS      :-- will used to convert the information into 			geographical graphs
+			>>>india,world etc-- 
+POWERBI Q&A       :-- it is integrate ai 
+POWERBI MOBILE    :-- will display the layouts of desktop and 				mobile layout
+			>>>android , ios 
+POWERBI SERVICES :-- will share the report with clients
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+aggregate function  :-- will convert into multiple cell information into single cell of information
+
+sum()
+min()
+max()
+prod()
+cumsum()     :-- will add the all previous element from current position element 
+cumprod()    :-- will multiply the all previous element from current position element
+
+
+
+argmax()    :-- will return the indices position of max element
+argmin()    :-- will return the indices position of min element
+
+
+round()     :-- will return upper value when value in >=0.5 or else lower values
+floor()     :-- will return near by lower values 
+ceil()      :-- will return near by upper values
+
+
+mean()
+median()
+var()
+std()
+
+
+mathematical functions :
+
++
+-
+*
+%
+/
+//
+**
+
+
+
+
+
+

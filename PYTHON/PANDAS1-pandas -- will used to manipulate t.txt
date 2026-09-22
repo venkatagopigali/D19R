@@ -1,0 +1,7 @@
+pandas :-- will used to manipulate the data using python 
+		i.e data cleaning operations 
+	>>>pip install pandas 
+
+1d  :-- 1 dimensional - Series() :-- we have only one columns
+2d  :-- 2 dimensional - DataFrame() :-- we have both rows and columns 
+

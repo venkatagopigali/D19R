@@ -1,0 +1,73 @@
+text functions / string functions  :--
+
+concat()
+upper()
+lower()
+len()
+replace()
+left()
+right()
+mid()
+trim()
+textjoin()     :-- will add the two or more string
+substitute()   :-- will replace the old text with the new text
+proper()       :-- will convert every first letter in word will 			capital remaining all small 
+exact()        :-- here the two value are perfectly matched
+find()         :-- will find the element in string -- case sensitive
+search()       :-- will find the element in string
+
+number functions :-- will perform operation on numerical type of data
+--------------------------------------------------------------------
+
+aggregate functions:
+-----------------------------------
+sum()
+min()
+max()
+average()
+count()
+
+round functions :
+----------------------------------
+round()        :-- will return near by upper value when >=0.5 or else lower values
+roundup()      :-- will return near by upper values
+rounddown()    :-- will return near by lower values
+
+random functions :-- will return the number randomly in between two range of number 
+---------------------------
+rand()           :-- will return the number randomly in between 0 and 1
+			>>>here both 0 and 1 are excluded
+randbetween()    :-- will return number in between two range of number 
+			>>>here the both start and end values are included
+randarray(row,clolumns,start,end)      :-- will return an array randomly
+			>>>here the both start and end values are included
+
+
+mathematical function :--
+---------------------------------
+power(number,power_value)      :-- 
+sqrt()
+abs()       :-- will convert the negative value to positive values 
+int()       :-- will convert into integer values
+floor()     :-- will return near by lower values   
+ceiling()   :-- will return near by upper values
+mod()       :-- will return remainder value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

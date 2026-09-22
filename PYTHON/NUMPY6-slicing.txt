@@ -1,0 +1,7 @@
+slicing :
+
+2d :-- [row_slicing,column_slicing]
+       [row_start:row_stop:row_step,col_start:col_stop:col_step]
+
+3d :-- [matric_sliciing,row_slicing,column_slicing]
+      [m_start:m_stop:m_step,row_start:row_stop:row_step,col_start:col_stop:col_step]

@@ -1,0 +1,34 @@
+array creation :
+----------------------
+using list and tuple         --> array
+--------------------------------------------------
+using arange and linspace
+-----------------------------------------------------
+
+range() :-- will return the  sequence of numbers 
+range(start,stop,end)  :-- 
+range(start,stop)  :-- step --> 1
+range(stop)  :-- start --> 0 and step -->1
+
+linspace(start,stop,count)  :-- will split two number with equidistance
+				>>>start and end values are included
+
+using zeors and ones      
+-----------------------------------------------------
+zeros(shape) :-- will fill the array with zeors
+ones(shape)  :-- will fill the array with ones
+
+
+
+using eye and identity :
+----------------------------------------------------
+eye :--         will keep diagonal as ones rest of positions all are zero 
+identity :--    will keep diagonal as ones rest of positions all are zero
+ 		and it must be a square matrics 
+
+
+
+
+
+using random
+using tile,reshape and astype

@@ -1,0 +1,27 @@
+DESKTOP :
+
+>>>change the table name :-- 
+---------------------------------
+>>>table_view --> table tools --> name
+>>>data pane/filed name
+
+change column :--
+------------------------
+>>>table_view --> column tools  --> name 
+>>>data pane/field pane
+
+change datatype :--
+------------------------
+>>>table_view --> column tools  --> name 
+
+
+ETL :-- extraxt ,transform, load
+
+extract      :-- will get the data from different location
+			>>>Database,API,Websites,excel,csv etc-- 
+transform    :-- will ready to perform cleaning operation or ready perform manipulation 		 operation
+load         :-- will dumb data to desktop or will save the change permanently in 			original data
+
+>>>but we can follow ELT  in powerbi 
+
+

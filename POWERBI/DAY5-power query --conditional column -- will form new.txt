@@ -1,0 +1,30 @@
+conditional column :-- will form new column based condition
+			>>>row by row operation
+==============================================================
+>>>query --> add column --> conditional column 
+
+remove columns :-- will used to remove the column 
+========================================================
+>>>query --> home --> remove column
+
+choose column :-- will select column  which are you want 
+==========================================================
+>>>query --> home --> choose column 
+
+remove rows :-- will remove the rows from data
+===============================================================
+>>>query --> home --> remove rows 
+
+keep rows :-- will select the which rows wanted 
+==============================================================
+>>>query --> home --> keep rows
+
+
+
+
+
+
+
+
+
+

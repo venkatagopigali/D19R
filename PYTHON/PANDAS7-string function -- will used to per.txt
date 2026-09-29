@@ -1,0 +1,29 @@
+string function :-- will used to perform operations on string type of data
+
+upper()      :-- will convert the lowercase to upper case
+lower()      :-- will convert the uppercase to lowercase
+swapcase()   :-- will change the lowercase to upper and upper to lower
+capitalize() :-- the first letter in the string is upper remaining all lower
+title()      :-- every first letter  in the word is capital and remaining all lower
+
+strip()      :-- will used to remove the space from both side i.e. string staring and string ending
+lstrip()     :-- will used to remove the left side space 
+rstrip()     :-- will used to remove the right side space
+split()      :-- will used to split the string by using delimiter 
+join()       :-- will used to combine the two or more string
+cat()        :-- will used to add two or more strings
+replace()    :-- will used to replace the  old string with new string
+len()        :-- will return no.of characters in string that includes special characters number etc
+count()      :-- will return the character how many time repeated
+
+isupper()    :-- will check the string is upper or not 
+islower()    :-- will check the string is lower or not 
+isalpha()    :-- will check the string contain alphabets or not 
+isdigit()    :-- will check the string contain digits (0-9) or not 
+isalnum()    :-- will check the string contain both alphabets and numbers or not
+
+
+
+
+
+

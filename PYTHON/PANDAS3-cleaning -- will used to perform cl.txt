@@ -1,0 +1,12 @@
+cleaning :-- will used to perform cleaning operations data
+		i.e manipulation
+
+isnull()            :-- will check the null values 
+fillna()            :-- will fill all null value with one value
+ffill()             :-- will fill the null value with upper cell value
+bfill()             :-- will fill the null value with lower cell value
+dropna()            :-- will used to remove the null values 
+duplicated()        :-- will check the duplicate values 
+drop_duplicates()   :-- will remove the duplicates in DataFrame
+astype()            :-- will change the datatype 
+replace()           :-- will replace new value in the place of old value 

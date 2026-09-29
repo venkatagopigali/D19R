@@ -1,0 +1,23 @@
+query          :-- will extract the data from dataframe based on condition
+		i.e. string based equation 
+equation based  :-- will extract the data from dataframe based on condition
+			&,|
+filter        :-- will used to extract the columns 
+unique        :-- will return all values from columns but return only once 		   which duplicated
+nunique       :-- will return no.of unique values in columns 
+group by      :-- will used to summarize the data based particular columns
+
+
+aggregate functions :
+-------------------------
+sum()
+min()
+max()
+mean()
+count()
+value_counts()
+
+
+
+
+

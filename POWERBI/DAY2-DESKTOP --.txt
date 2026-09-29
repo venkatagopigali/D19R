@@ -1,0 +1,27 @@
+DESKTOP :-- 
+
+segregation powerbi desktop:
+--------------------------
+
+ribbon   :-- 
+getdata :-- will get the data from various location to powerbi
+transform data :-- will transform data from desktop to query
+publish :-- will used to share report with client
+
+
+view   :
+report       :-- will used to create the dashboard
+data/table   :-- to display the table information 
+model        :-- to build the connections between two or more tables 
+
+
+panes   :
+data/filed    :-- we have filed names i.e column name  
+visualization :-- we have graphs 
+filter        :-- will used to extract data
+
+layouts:
+desktop 
+mobile 
+
+page navigation  :-- will navigate the from one page to anthor page

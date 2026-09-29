@@ -1,0 +1,14 @@
+merge queries :-- will used to combine two tables
+--------------------------------------------------
+>>>query --> home --> merge queries
+
+
+inner join       :-- will return the common value from both queries
+left join        :-- will return all values from left table and common 				values from right table
+right join       :-- will return all values from right table and common 			values from left table
+full outer join  :-- will return all values form both tables
+left anti        :-- will return all from left table which not common 				with right table
+right anti       :-- will return all values from right table except 				common values in left table
+
+
+

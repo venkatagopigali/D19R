@@ -1,0 +1,34 @@
+accessing methods :--
+---------------------------------
+columns
+set_index()
+reset_index()
+sort_index()
+sort_values()
+loc[]          :-- will used to access the data in dataFrame by using row name and column name 
+		  	loc[row_name,column_name]
+iloc[]         :-- will used to access the data in dataFrame by using row index, column index
+			iloc[row_index,column_index]
+at[]           :-- will used to access the only single value in dataFrame by using row name and column name
+			at[row_name,column_name]
+iat[]          :-- will used to access the only single value in dataFrame by using row index, column index
+			iat[row_index,column_index]
+
+
+at[],iat[] --> will execute speedly then comapare to loc[],iloc[]
+
+
+nlargest()       :-- will display no.of record here by defaultly occure  descending
+nsmallest()      :-- will display no.of record here by defaultly occure  ascending
+
+
+
+
+
+
+
+
+
+
+
+

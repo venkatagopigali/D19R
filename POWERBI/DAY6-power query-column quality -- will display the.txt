@@ -1,0 +1,36 @@
+column quality :-- will display the valid,error,empty data in a column 
+-----------------------------------------------------------------------
+>>>query -->  view --> column quality
+	valid data :-- here column datatype and data datatype are same 
+	error data :-- here column datatype and data datatype are different
+	empty data :-- will represents the  null or empty cells
+
+column distribution :-- will display distinct and count of values in a column
+-----------------------------------------------------------------------------
+>>>query --> view --> column distribution
+
+column profile :-- will provide the complete statical information about column
+			ex :-- count,min,max,avg  etc----
+-----------------------------------------------------------------------------
+>>>query --> view --> column profile
+
+monospaced :-- will display the text in government font style
+----------------------------------------------------------------------------
+>>>query --> view --> monospaced
+
+
+replace values :-- will replace the old text with the new text
+---------------------------------------------------------------
+>>>query --> transform --> replace values
+
+replace errors :-- will used to replace error with new data
+-------------------------------------------------------------
+>>>query --> transform --> replace errors
+
+
+
+
+
+
+
+

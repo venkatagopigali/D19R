@@ -1,0 +1,25 @@
+read methods :-- will get the data from anothor location to python
+-----------------------------------------
+read_csv()
+read_excel()     ---> pip install openpyxl
+read_html()      ---> pip install lxml
+read_sql()
+read_json()
+
+inspection methods :-- will check current status of data 
+---------------------------------------------
+head()      :-- will return no.of row from top 
+		>>>by default return 5 row
+tail()      :-- will return no.of rows from bottom 
+		>>>by default return 5 row
+info()      :-- will give to information about DataFrame
+		>>>no.of rows,no.columns,column_names,nonnull,space 
+describe()  :-- will represents statical information of data
+dtypes      :-- will return datatypes of columns 
+shape       :-- will shape of dataframe or series
+		Series --> (columns)
+		DataFrame --> (rows,columns)
+			
+momory_usage() :-- will return space ocuupied each and every columns
+
+

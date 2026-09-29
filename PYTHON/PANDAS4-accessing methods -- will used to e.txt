@@ -1,0 +1,16 @@
+accessing methods :-- will used to extract particular data from dataframe
+-------------------------------------------------------------------------
+columns          :-- will used to display the columns in DataFrame 
+set_index()      :-- will used to set new index to dataframe 
+			>>>set_index(column_name)
+			>>>set_index(column_name1,column_name)
+reset_index()    :-- will used to reset the index 
+sort_index()     :-- will set the data into specific order either asc or desc
+sort_values()    :-- will set the data into specific order either asc or desc 			     based particular column 
+		     >>>sort_values(column_name)
+loc[]
+iloc[]
+at[]
+iat[]
+nlargest()
+nsmallest()

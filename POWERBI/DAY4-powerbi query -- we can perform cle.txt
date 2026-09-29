@@ -1,0 +1,12 @@
+powerbi query :-- we can perform cleaning operations 
+---------------------------------
+>>>desktop --> home --> transform data
+
+
+split columns :-- we can split the columns 
+---------------------------------------------
+>>>query --> home --> split columns 
+
+merge column :-- will combine columns 
+----------------------------------------------
+>>>query --> add column --> merge column 

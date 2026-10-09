@@ -1,0 +1,25 @@
+matplotlib :--
+
+line()        -- plot()
+
+
+plt.plot(d1['Region'],d1['Price'],label='sum of price',color='#B08A82',linewidth=3,linestyle='dashed',marker='*',markersize=20)
+plt.plot(d1['Region'],d1['TotalAmount'],label='sum of total amount',color='#FF0084',linewidth=3,linestyle='dotted',marker='+',markersize=20)
+plt.xlabel('Region',color='green',size=20)
+plt.ylabel('Sum of values',color='red',size=20)
+plt.title('region by sum of values',color='blue')
+plt.legend(loc=5)
+plt.show()
+
+pie()        -- pie() :-- it is univariant analysis , here we can send either continuous column or categorical columns
+
+plt.pie(d1['TotalAmount'],labels=d1['Region'],autopct='%1.0f%%',explode=[1,1,0,0,1,0,0],colors=['k','b','r','orange','g','yellow','purple'])
+plt.title('sum of total amount')
+plt.show()
+
+
+histogram()
+bar()
+scatter()
+boxplot()
+subplots()

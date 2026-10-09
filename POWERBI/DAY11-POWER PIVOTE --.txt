@@ -1,0 +1,53 @@
+POWER PIVOTE :-- 
+	>>>here pivot is by default component
+	>>>we can use to perform DAX 
+DAX :-- data analysis expressions :-- to perform mathematical operations
+
+accessing the single column :
+--------------------------------
+>>>table_name[column_name] 
+
+calculated column :-- will form the new by perform mathematical operation 			in between two or more column
+			>>>here we can perform row by row operation
+
+measure           :-- will return the result based on aggregate functions 
+			>>>will perform column wise operations
+
+
+
+total_amount = (ecommerce_dirty_data[price]*ecommerce_dirty_data[quantity])+ecommerce_dirty_data[amount]
+
+
+amount = ecommerce_dirty_data[price]*ecommerce_dirty_data[quantity]
+
+Measure = sum(ecommerce_dirty_data[price])
+
+avg_qua = AVERAGE(ecommerce_dirty_data[quantity])
+
+
+aggregate functions  :-- will convert the multiple cell information into single cell of information 
+
+sum()          :--  will add the all value in a column (+)
+min()          :--  will return lowest values (>,<)
+max()          :--  will return highest value (>,<)
+average()      :--  will calculate the sum of values/count of values
+count()        :--  will count no.of cells contain data 
+counta()       :--  will count no.of cells contain data 
+
+
+Measure 2 = sum(Sheet1[age])
+
+Measure 3 = min(Sheet1[age])
+
+Measure 4 = max(Sheet1[age])
+
+Measure 5 = AVERAGE(Sheet1[age])
+
+Measure 6 = count(Sheet1[age])
+
+Measure 7 = COUNTA(Sheet1[name ])
+
+
+
+
+

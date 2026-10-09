@@ -1,0 +1,10 @@
+group by :-- will group the data 
+----------------------------------------
+>>>query --> transform --> group by 
+
+transpose :-- will change the row to columns and column to rows 
+-----------------------------------------------------
+
+format :- will used for performed string operation :
+----------------------------------------------------
+upper,lower,capitalize each word,trim,suffix,prefix,clean 

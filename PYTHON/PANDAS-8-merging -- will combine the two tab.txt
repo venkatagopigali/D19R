@@ -1,0 +1,31 @@
+merging :-- will combine the two tables 
+
+inner   :-- will return the common values from both tables
+left    :-- will return all values from left table and common values from right table
+right   :-- will return common values from left table and all values from right table
+outer   :-- will return all values from both tables 
+cross   :-- will assign the each and every row with the each every row in second table
+		i.e. Cartesian product
+
+
+map({"old_value1":"New_value1","old_values2":"new_value2"}) :-- will used tp replace the multiple values at a time 
+
+rename({"old_column_name1":"new_column_name1","old_column_name2":"new_column_name2"})
+	>>>will used to rename the columns
+
+
+write methods :-- will used to send the data from python location to another source of data
+------------------------------------------------------------------------------------------
+to_csv('filename.csv')
+to_excel('filename.xlsx')
+to_json('filename.json')
+
+
+
+
+
+
+
+
+
+

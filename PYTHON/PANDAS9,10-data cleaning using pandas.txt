@@ -1,0 +1,9 @@
+data cleaning using pandas :
+-----------------------------
+
+1.table_name (DataFrame name)
+2.column_name
+3.datatypes
+4 null     duplicates     spelling mistakes
+    |         |                |
+  fill      remove           correct 

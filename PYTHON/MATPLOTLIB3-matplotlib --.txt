@@ -1,0 +1,30 @@
+matplotlib :--
+
+line()        :-- plot()
+pie()         :-- pie()
+histogram()   :-- hist() :-- it is univariant analysis. we can send either continuous orcategorical data
+
+plt.hist(data['Price'],bins=4,color='red',histtype='step')
+plt.xlabel('Price range')
+plt.ylabel('count')
+plt.title('no.of value in between price range')
+plt.show()
+
+bar()         :-- bar(),barh() :-- it is bivariant analysis :-- will send both 	continuous data and categorical data 
+
+
+plt.bar(d1['Category'],d1['Price'],label='total price')
+plt.bar(d1['Category'],d1['TotalAmount'],color='g',bottom=d1['Price'],label='total Amount')
+plt.bar(d2['Category'],d2['TotalAmount'],bottom=d1['Price']+d1['TotalAmount'],color='r',label='avg total amount')
+plt.legend()
+plt.show()
+
+plt.bar(index,d1['Price'],width=bar_width,color='pink')
+plt.bar(index+bar_width,d1['TotalAmount'],width=bar_width,color='yellow')
+plt.bar(index+(2*bar_width),d1['TotalAmount'],width=bar_width,color='#F227F5')
+plt.show()
+
+
+scatter()
+boxplot()
+subplots()

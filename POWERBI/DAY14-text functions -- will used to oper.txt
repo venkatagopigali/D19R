@@ -1,0 +1,43 @@
+text functions :-- will used to operation on perform operation on any kind of data
+
+concatenate()    :-- will used to add the two or more string 
+upper()          :-- will used to convert the text into upper case
+lower()          :-- will used to convert the text into lower case
+len()            :-- will return no.of characters in a string 
+replace('str',start,no.of_char,'new_text')    :-- will used to change the old text with new text 
+left('str',no.of_char)  :-- will return no.of characters from left side
+right('str',no.of_char) :-- will return no.of characters from right side
+mid('str',start,no.of_char) :-- will used to split the string 
+trim('str')                :-- will remove the left side and right side spaces
+substitute('str','old_text','new_text')  :-- will used to change the old text with new text
+find('find_char','str',start)   :-- will return position char
+exact()           :-- will check the two string are same or not
+
+
+Column = CONCATENATE(Orders_2024_Jan_Jun[CustomerName]," "&Orders_2024_Jan_Jun[Region]&"**"&Orders_2024_Jan_Jun[Category])
+
+Column 2 = upper(Orders_2024_Jan_Jun[Category])
+
+Column 3 = lower(Orders_2024_Jan_Jun[Column 2])
+
+Column 4 = len(Orders_2024_Jan_Jun[Column])
+
+Column 5 = replace("ayushmanbhava",4,2,"@")
+
+Column 6 = REPLACE(Orders_2024_Jan_Jun[OrderID],2,2,"ORD0")
+
+Column 7 = left(Orders_2024_Jan_Jun[Category],3)
+
+Column 8 = RIGHT(Orders_2024_Jan_Jun[OrderID],3)
+
+Column 9 = MID(Orders_2024_Jan_Jun[column 6],2,3)
+
+Column 10 = trim(Orders_2024_Jan_Jun[column 3])
+
+Column 11 = SUBSTITUTE(Orders_2024_Jan_Jun[column 2],"O","@@")
+
+Column 12 = FIND("R","GROCERY",1)
+
+Column 13 = EXACT("Gopi","Gopi")
+
+Column 14 = SEARCH("R","Grocery",1)

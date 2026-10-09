@@ -1,0 +1,55 @@
+aggregateX functions :-- we will used to perform calculated columns and measures at a time 
+
+sumx()
+minx()
+maxx()
+averagex()
+countx()
+countax()
+
+
+--> here first will perform row by row operation i.e. calculated columns
+--> later it will perform column wise operation i.e. measure
+
+>>>aggx(table_name,expresion)
+
+Measure = sum(Sheet1[price])
+
+Measure 2 = min(Sheet1[price])
+
+Measure 3 = sumx(Sheet1,Sheet1[price]*Sheet1[quantity])
+
+Measure 4 = minx(Sheet1,Sheet1[price]*Sheet1[quantity])
+
+Measure 5 = maxx(Sheet1,Sheet1[price]*Sheet1[quantity])
+
+Measure 6 = sumx('Sheet1 (2)',('Sheet1 (2)'[price]-(('Sheet1 (2)'[price]/100)*'Sheet1 (2)'[discount]))*'Sheet1 (2)'[quantity])
+
+
+logical operators :-- will used to check the condition is true or false 
+
+logical statement:--
+------------------------
+and   :-- will must be true all conditions 
+or    :-- here at least one condition must be true
+not   :-- true --> false , false --> true
+
+filter :--
+---------------------
+&     :-- will must be true all conditions 
+|     :-- here at least one condition must be true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

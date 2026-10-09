@@ -1,0 +1,6 @@
+statical functions :
+-------------------------------
+>>>query --> transform --> statical functions
+
+extract :-- >>>query --> transform --> extract
+parse :-- >>>query --> transform --> parse

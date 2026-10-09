@@ -1,0 +1,55 @@
+conditional column :-- based on condition we can form new column
+>>>query --> add column --> conditional column
+
+logical statements :-- will used to apply the conditions on particular columns 
+
+if()      :-- mainly will used for perform single condition at a time 
+		>>>if(condition,True,False)
+switch    :-- will used to perform more then one condition at a time 
+		>>>switch(true()/false(),
+			  condition1,result1,
+			  condition2,result2,result----)
+
+
+
+Column = if(Orders_2024_Jan_Jun[Quantity]>5,"A","B")
+
+Column 2 = if(and(Orders_2024_Jan_Jun[Quantity]>5,Orders_2024_Jan_Jun[PaymentMethod]="UPI"),"AU","NA")
+
+Column 3 = if(Orders_2024_Jan_Jun[Quantity]>7,"A",(if(Orders_2024_Jan_Jun[Quantity]>5,"B",(if(Orders_2024_Jan_Jun[Quantity]>3,"C","D")))))
+
+
+Column 4 = SWITCH(true(),
+Orders_2024_Jan_Jun[Quantity]>7,"A",
+Orders_2024_Jan_Jun[Quantity]>5,"B",
+Orders_2024_Jan_Jun[Quantity]>3,"C",
+"D")
+
+Column 5 = SWITCH(false(),
+Orders_2024_Jan_Jun[Quantity]>7,"A",
+Orders_2024_Jan_Jun[Quantity]>5,"B",
+Orders_2024_Jan_Jun[Quantity]>3,"C",
+"D")
+
+Column 6 = SWITCH(True(),
+Orders_2024_Jan_Jun[Category]="Grocery","G",
+Orders_2024_Jan_Jun[Category]="Home Decor","HD",
+Orders_2024_Jan_Jun[Category]="Electronics","E",
+"F")
+
+
+Column 7 = SWITCH(true(),
+and(Orders_2024_Jan_Jun[Category]="Grocery",Orders_2024_Jan_Jun[PaymentMethod]="UPI"),"GU",
+and(Orders_2024_Jan_Jun[Category]="Grocey",Orders_2024_Jan_Jun[PaymentMethod]="COD"),"GC",
+and(Orders_2024_Jan_Jun[Category]="Grocey",Orders_2024_Jan_Jun[PaymentMethod]="Card"),"GCR",
+and(Orders_2024_Jan_Jun[Category]="Grocery",Orders_2024_Jan_Jun[PaymentMethod]="NetBanking"),"GN",
+"others")
+
+Column 7 = SWITCH(true(),
+or(Orders_2024_Jan_Jun[Category]="Grocery",Orders_2024_Jan_Jun[PaymentMethod]="UPI"),"GU",
+or(Orders_2024_Jan_Jun[Category]="Grocey",Orders_2024_Jan_Jun[PaymentMethod]="COD"),"GC",
+or(Orders_2024_Jan_Jun[Category]="Grocey",Orders_2024_Jan_Jun[PaymentMethod]="Card"),"GCR",
+or(Orders_2024_Jan_Jun[Category]="Grocery",Orders_2024_Jan_Jun[PaymentMethod]="NetBanking"),"GN",
+"others")
+
+Column 8 = if(not(Orders_2024_Jan_Jun[Quantity]>5),"A","B")

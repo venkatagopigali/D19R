@@ -1,0 +1,11 @@
+append queries :-- will add the two or more tables 
+-------------------------------------------------
+>>>query --> home --> append queries
+
+sort :-- will set the data into either asc or desc
+-----------------------------------------------------
+>>>query --> home --> sort
+
+use first row as header :-- will makes the first as table heading
+-------------------------------------------------------------
+>>>query --> home --> use first row as header 

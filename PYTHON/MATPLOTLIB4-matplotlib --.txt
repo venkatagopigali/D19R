@@ -1,0 +1,29 @@
+matplotlib :--
+
+line()
+pie()
+histogram()
+bar()
+scatter()    :-- scatter() :-- it is bivariant and multi variant :-- will send both continuous data and categorical data 
+
+plt.scatter(data['Price'],data['TotalAmount'],color='k',s=data['CustomerID'],edgecolors='r',alpha=0.5,linewidths=1)
+plt.show()
+
+
+boxplot()   :-- boxplot() :-- will used to identify the outlier 
+
+plt.boxplot(data[['TotalAmount']])
+plt.show()
+
+subplots()  :-- subplots() :-- will used to draw multiple graphs at a time
+
+
+fig,a=plt.subplots(2,3,figsize=(5,5))
+a[1,1].bar(d1['Region'],d1['Price'],color='g')
+a[1,2].bar(d1['Region'],d1['TotalAmount'])
+a[0,0].pie(d1['Quantity'],labels=d1['Region'],autopct='%1.2f%%')
+a[0,1].hist(d1['Quantity'],bins=2,color='orange',histtype='step')
+a[0,2].scatter(d1['Price'],d1['TotalAmount'],s=d1['Quantity'],color='yellow',edgecolors='r',linewidth=2)
+a[1,0].boxplot(d1[['TotalAmount']])
+a[1,1].plot(d1['Region'],d1['Price'],color='r',linewidth=2,marker='*',markersize=15)
+plt.show()

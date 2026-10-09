@@ -1,0 +1,28 @@
+matplotlib :-- will convert the data into data visualization
+
+EDA :-- exploratory data analysis :--
+
+univariant     :-- we can pass either continuous data or categorical data 
+		>>>pie,histogram
+bi variant     :-- will pass both continuous data and categorical data
+		>>>line,bar,scatter 
+multi variant  :-- will pass more then one continuous data and more then one categorical data
+		>>>heat,tree,scatter, etc----
+
+continuous data :-- the data in between the two range of values 
+categorical data :-- will form data based on condition or the repeated data
+
+line       --> it is bivariant analysis :-- we can pass both 			continuous data and categorical data 
+		>>>plot()
+pie
+histogram
+bar
+scatter
+boxplot
+subplots
+
+
+
+
+
+

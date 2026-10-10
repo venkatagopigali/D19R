@@ -1,0 +1,37 @@
+time intelligence functions :
+
+present
+present year ---->(2026)
+present quater ---> (q4/2026)
+present month ---> (10/2026)
+
+past :
+past year    ---> 2025
+past quater   ---> (q3/2026)
+past month     ----> (9/2026)
+
+same period but past year:
+year      ---> 2025
+present quater but in last year (q4/2025)
+present month but in last year (10/2025)
+
+
+py = totalytd(sum(tif[sales]),tif[orderdate])
+pypq = TOTALQTD(SUM(tif[sales]),tif[orderdate])
+pypm = totalmtd(sum(tif[sales]),tif[orderdate])
+
+
+pastmonth = CALCULATE(SUM(tif[sales]),PREVIOUSMONTH(DATESMTD(tif[orderdate])))
+pastquater = CALCULATE(sum(tif[sales]),PREVIOUSQUARTER(DATESQTD(tif[orderdate])))
+pastyear = CALCULATE(sum(tif[sales]),PREVIOUSYEAR(DATESYTD(tif[orderdate])))
+
+pastyearpm = CALCULATE(SUM(tif[sales]),SAMEPERIODLASTYEAR(DATESMTD(tif[orderdate])))
+pastyearpq = CALCULATE(SUM(tif[sales]),SAMEPERIODLASTYEAR(DATESQTD(tif[orderdate])))
+pastyearprt = CALCULATE(sum(tif[sales]),SAMEPERIODLASTYEAR(DATESYTD(tif[orderdate]))) 
+
+
+
+
+
+
+

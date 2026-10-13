@@ -1,0 +1,12 @@
+seaborn  :-- will convert the data into data visualization 
+
+lineplot()        :-- bivariant
+histplot()        :-- univariant
+kdeplot()         :-- univariant
+barplot()         :-- bivariant
+scatterplot()     :-- bivariant and multivariant
+boxplot()         :-- multivariant 
+viloneplot()
+countplot()
+heatmap()
+pairplot()

@@ -1,0 +1,15 @@
+seaborn :-- will used to convert the data into data visualization
+
+lineplot()
+histplot()
+barplot()
+scatterplot()
+boxplot()
+countplot()
+heatmap()
+pairplot()
+viloineplot()
+
+sns.lineplot(data=orders,x='Category',y='Price',hue='PaymentMethod')
+plt.show()
+

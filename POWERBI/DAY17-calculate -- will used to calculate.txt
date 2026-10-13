@@ -1,0 +1,20 @@
+calculate :-- will used to calculate the expression with applying filter
+>>>calculate(expression,condition1,condition2,condition3---)
+
+Measure = CALCULATE(sum(sales_2024[sales]),year(sales_2024[orderdate])=2025,MONTH(sales_2024[orderdate])=12,day(sales_2024[orderdate])>=1,DAY(sales_2024[orderdate])<=10)
+
+Measure 3 = CALCULATE(sum(sales_2024[sales]),sales_2024[orderdate]>=date(2025,12,1),sales_2024[orderdate]<=date(2025,12,10))
+
+
+Measure 4 = CALCULATE(SUM(sales_2024[sales]),sales_2024[orderdate]>=date(2026,1,1),sales_2024[orderdate]<=date(2026,6,30))
+
+Measure 5 = CALCULATE(SUM(sales_2024[sales]),year(sales_2024[orderdate])=2026,MONTH(sales_2024[orderdate])<=6,MONTH(sales_2024[orderdate])>=1)
+
+Measure 6 = CALCULATE(SUM(sales_2024[sales]),sales_2024[orderdate]=date(2024,1,13))
+
+Measure 7 = CALCULATE(SUM(sales_2024[sales]),sales_2024[orderdate]<=today(),sales_2024[orderdate]>=edate(today(),-6))
+
+Measure 8 = CALCULATE(SUM(sales_2024[sales]),year(sales_2024[orderdate])=2025,mod(month(sales_2024[orderdate]),2)=0)
+
+Measure 8 = CALCULATE(SUM(sales_2024[sales]),year(sales_2024[orderdate])=2025,mod(month(sales_2024[orderdate]),2)<>0)
+

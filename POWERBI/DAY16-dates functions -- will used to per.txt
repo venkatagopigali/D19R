@@ -1,0 +1,15 @@
+dates functions :-- will used to perform operations on date type of data 
+
+now()          :-- will return present date and time 
+today()        :-- will return present date only
+date(yyyy,mm,dd):--will convert the individua values into date type of data 
+dateadd('date',count,'y'/'m'/'d') :-- will add the no.of days/months or year to date 
+datediff('start_date','end_date','y/m/d')  :-- will return no.of days or no.of months 				or no.of years in between two dates 
+year('date')   :-- will return year from date        
+month('date')  :-- will return month from date        
+day('date')    :-- will return day from date
+hour('date')   :-- will return hours from date
+minute('date') :-- will return minute from date
+second('date') :-- will return second from date
+edate('date',count)  :-- will used to add no.of months to date
+emonth('date',count) :-- will return end of month date after adding no.of months to date

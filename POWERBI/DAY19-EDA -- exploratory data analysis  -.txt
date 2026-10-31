@@ -1,0 +1,12 @@
+EDA :-- exploratory data analysis  :-- will used to identify the which graph is suitable for data 
+
+univariant        :-- we can send data  either continuous data or categorical data 
+			pie,histogram
+bi variant        :-- we can send both continuous data and categorical data
+			line,bar,scatter
+multi variant     :-- we can send more then one continuous data and more then categorical data
+			>>>heatmap,treemap,scatter,funnel etc----
+
+
+continuous data    :-- the data is in between two range of values
+categorical data   :-- the data is formed based on condition or the data which is repeated

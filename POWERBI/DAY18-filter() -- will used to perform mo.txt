@@ -1,0 +1,60 @@
+filter() :-- will used to perform more then one condition applying logical operators 
+
+>>>filter(table_name,cond1 )
+>>>calculate(expression,filter(table_name,cond1))
+---------------------------------------------------------------------------------------
+
+Measure = CALCULATE(sum(Orders_2024_Jan_Jun[Price]),Orders_2024_Jan_Jun[Category]="Grocery")
+
+Measure 2 = CALCULATE(sum(Orders_2024_Jan_Jun[Price]),Orders_2024_Jan_Jun[Region]="E",Orders_2024_Jan_Jun[Category]="Grocery")
+
+
+Measure 3 = CALCULATE(sum(Orders_2024_Jan_Jun[Price]),FILTER(Orders_2024_Jan_Jun,Orders_2024_Jan_Jun[Region]="East" || Orders_2024_Jan_Jun[Region]="West"))
+
+Measure 4 = CALCULATE(SUM(Orders_2024_Jan_Jun[Price]),FILTER(Orders_2024_Jan_Jun,Orders_2024_Jan_Jun[Region]="South" && (Orders_2024_Jan_Jun[Category]="Grocery" || Orders_2024_Jan_Jun[Category]="Electronics")))
+
+var and return :-- will used write code by using variables 
+
+var :-- will used to declare the variable
+return :-- will used calculate the values
+
+Measure 5 = CALCULATE(
+    var a=10
+    var b=20
+    RETURN mod(a,b)
+)
+
+Measure 6 = CALCULATE(
+    var a=(
+        var c=100
+        var d=300
+        return c+d
+    )
+    var b=(
+        var c=200
+        var d=700
+        RETURN c-d
+    )
+    RETURN -a+b
+)
+
+Measure 8 = CALCULATE(
+    var investment=1600000
+    var amount=sumx(Orders_2024_Jan_Jun,Orders_2024_Jan_Jun[TotalAmount]-((Orders_2024_Jan_Jun[TotalAmount]/100)*Orders_2024_Jan_Jun[Quantity]))
+    RETURN amount-investment
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

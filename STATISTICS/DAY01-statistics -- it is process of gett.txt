@@ -1,0 +1,20 @@
+statistics :-- it is process of getting the data , organizing data, interpreting data and projecting data
+
+data :-- collection of raw of facts or collection of information
+
+
+we have two types of data 
+
+numerical data      :-- we can send only numerical type of data 
+
+continuous data   :-- the numerical values is in between two 				range of values or measurable data 
+			>>>height,weight,marks,age etc--
+discreet data     :-- the numerical which is countable 
+			>>>quantity,no.of students etc-- 
+
+categorical data    :-- we can send the text type of data 
+
+Nominal    :-- the data which unordered i.e. we can not mention any priority
+		>>>region,name,productname,gender etc--- 
+ordinal    :-- the data which ordered i.e. we can mention priority
+		>>>rating,education,grades etc--- 

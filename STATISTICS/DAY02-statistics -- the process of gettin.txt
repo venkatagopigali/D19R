@@ -1,0 +1,34 @@
+statistics :-- the process of getting the data,organizing the data, interpreting data and projecting the data 
+
+types statistics :
+======================================
+descriptive   :-- will only work with previous data i.e. will 	used to analyze the past data
+		>>>we cannot predict new values 
+
+measure of central tendency  :-- will convert the multiple data point into single data point
+		>>>mean,median,mode 
+measure of dispersion   :-- will used to spread the each and every point i.e. the points how much 			deviate from its original location
+		>>>range,mean deviation,varience,standard deviation,iqr,covarience,skewness
+
+
+inferential   :-- will used to predict new outcome 
+
+testing        :-- will used to identify weather outcome is correct or not 
+		>>>z-test,t-test,chi-Square test,ANOVA
+correlation     :-- will check how strong connected the two variable 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

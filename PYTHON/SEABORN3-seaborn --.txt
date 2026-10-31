@@ -1,0 +1,13 @@
+seaborn :-- 
+---------------------------------
+
+lineplot()
+histplot()
+kdeplot()
+barplot()
+scatterplot()
+boxplot()
+viloineplot()  :-- multivariant 
+countplot()    :-- multivariant
+pairplot()     :-- multivariant 
+heatmap()      :-- mutlivariant

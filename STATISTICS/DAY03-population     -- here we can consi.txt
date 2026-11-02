@@ -1,0 +1,16 @@
+population     :-- here we can consider entire data set 
+sample space   :-- here we can take some random data from population 
+
+descriptive :-- will used to perform operation on previous data or we can used to 		analyze the previous data 
+		>>>we can not any new outcome 
+
+measure of central tendency    :-- will convert the multiple data points into 					single data point 
+
+mean      :-- will calculate the sum of obeservations/no.of obeservationse
+median
+mode
+
+
+
+
+measure of dispersion          :-- will spread the each and every point from its 				original location

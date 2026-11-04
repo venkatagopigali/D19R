@@ -1,0 +1,10 @@
+measure of dispersion :-- will spread the each and every point 
+    >>>how much deviate the each and every point from its original location
+
+range                :-- will calculate max-min
+mean deviation       :-- will calculate how much deviate each and every point from mean point
+variance 
+standard deviation
+iql
+covariance 
+skewness

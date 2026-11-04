@@ -1,0 +1,5 @@
+parameter :-- will used to reduce the graphs 
+		>>>based on entire column will used to extract the data
+slicer    :-- will used to extract the data based values in column 
+
+tooltip :-- will used to add additional information in a label

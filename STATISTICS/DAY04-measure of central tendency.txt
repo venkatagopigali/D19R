@@ -1,0 +1,15 @@
+measure of central tendency :
+
+mean
+median    :-- will used to return mid values 
+		>>>before finding mid values we can set the 			data into either asc or desc
+	>>>if no.of observation are odd then (n//2)+1
+	>>>if no.of observation are even then mean of mid two values
+		then ((n/2)+((n/2)+1))/2
+
+mode      :-- most repeated value 
+
+no mode     :-- there will be no repeated value
+uni mode    :-- there will be only one value mostly repeated 
+bi mode     :-- there will be only two values mostly repeated
+multi mode  :-- there will be more then two values mostly repeated 
